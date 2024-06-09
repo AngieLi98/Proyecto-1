@@ -4,20 +4,42 @@
     box-sizing: border-box;
 }
 
-.nuestras-colecciones {
+header{
+  background-color: #093931;
+  height: 821px;
+}
+
+header .primeraSeccion{
+  display: flex;
+  height: 94%;
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+}
+
+.nav a{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;      
+}
+
+header h2{
+  font-size: 30px;
+  width: 400px;
+  line-height: 46px;
+  font-family: sans-serif;
+  color: #F5D38E; 
+  float: left;
   text-align: center;
 }
 
-
-.imagenes {
-    
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-
-}
 
 .nav a:hover {
   background-color: none;
@@ -32,6 +54,21 @@ section .img1Header img{
 section .img2Header img{
   width:241px; 
   height: 321px;
+}
+
+.nuestras-colecciones {
+  text-align: center;
+}
+
+
+.imagenes {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
 }
 
 .container {
