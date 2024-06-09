@@ -58,34 +58,43 @@ section .img2Header img{
 
 .nuestras-colecciones {
   text-align: center;
+  margin: 30px auto;
 }
 
+.colecciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .imagenes {
     
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-
+    
 }
 
 .container {
     position: relative;
     text-align: center;
     color: white;
+    margin: 15px;
     
   }
+
 
   .container img{
     width: 360px;
     height: 360px;
+    border-radius: 8px;
   }
 
   .centered {
     position: absolute;
-    top: 95%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -100,9 +109,21 @@ section .img2Header img{
     display: inline-block;
     font-size: 16px;
     border-radius: 25px;
+    margin: 30px auto;
     
   }
 
   .video {
     text-align: center;
   }
+
+  .nuestra-historia {
+    margin: 30px auto;
+  }
+
+  .vid {
+    Width: 1176px;
+    height:368px;
+    border-radius: 8px;
+  }
+  
