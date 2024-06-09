@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nuestras-colecciones {
@@ -18,6 +19,20 @@
 
 }
 
+.nav a:hover {
+  background-color: none;
+  color: #F5D38E;
+}
+
+section .img1Header img{
+  width:407px; 
+  height: 543px;
+}
+
+section .img2Header img{
+  width:241px; 
+  height: 321px;
+}
 
 .container {
     position: relative;
