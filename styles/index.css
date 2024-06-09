@@ -3,11 +3,32 @@
     padding: 0;
 }
 
+.nuestras-colecciones {
+  text-align: center;
+}
+
+
+.imagenes {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
 
 .container {
     position: relative;
     text-align: center;
     color: white;
+    
+  }
+
+  .container img{
+    width: 360px;
+    height: 360px;
   }
 
   .centered {
@@ -15,4 +36,21 @@
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+.button {
+    background-color:white; 
+    border: 2px solid #0D554A;
+    color: #0D554A;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    
+  }
+
+  .video {
+    text-align: center;
   }
