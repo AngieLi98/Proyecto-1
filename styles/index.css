@@ -73,6 +73,46 @@ section .img2Header img{
   height: 62px;
 }
 
+.Galeria1 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  border-radius: 8px;
+}
+
+div.gallery img {
+  width: 276px;
+  height: 320px;
+  border-radius: 8px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .nuestras-colecciones {
   text-align: center;
   margin: 30px auto;
@@ -99,13 +139,22 @@ section .img2Header img{
     text-align: center;
     color: white;
     margin: 15px;
+    cursor: pointer;
+    
     
   }
-
 
   .container img{
     width: 360px;
     height: 360px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+  }
+
+  .container img:hover {
+    border: 1px solid #777;
     border-radius: 8px;
   }
 
