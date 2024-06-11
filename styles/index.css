@@ -151,6 +151,7 @@ h3 {
 .Galeria {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .cards1 {
@@ -197,7 +198,7 @@ div.desc {
 
 .nuestras-colecciones {
   text-align: center;
-  margin: 30px auto;
+  margin: 46px auto;
 }
 
 .colecciones {
@@ -240,6 +241,10 @@ div.desc {
     border-radius: 8px;
   }
 
+  #img2, #img5  {
+    transform: translateY(-7%);
+  }
+
   .centered {
     position: absolute;
     top: 80%;
@@ -278,7 +283,10 @@ div.desc {
     color: white;
   }
 
-
+  #fondo {
+    background-color: #FAFAFB;
+    
+  }
 
   .video {
     background-color: #FAFAFB;
