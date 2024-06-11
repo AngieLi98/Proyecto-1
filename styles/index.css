@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    font-family: "Manrope", sans-serif;
 }
 
 header{
@@ -108,6 +115,22 @@ section .img2Header img{
 
 }
 
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  color: #0D554A;
+
+}
+
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+
+.parrafo {
+  color: #9095A0;
+}
+
 .uno {
   display: flex;
   flex-direction: row;
@@ -130,6 +153,11 @@ section .img2Header img{
   flex-direction: row;
 }
 
+.cards1 {
+  margin: 10px;
+  margin-left: 60px;
+}
+
 
 div.gallery {
   border: 1px solid #ccc;
@@ -150,6 +178,8 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: left;
+  font-size: 16px;
+  
 }
 
 .responsive {
@@ -212,24 +242,29 @@ div.desc {
 
   .centered {
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
   }
 
 .button {
     background-color:white; 
     border: 2px solid #0D554A;
     color: #0D554A;
-    padding: 15px 32px;
+    padding: 7px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 25px;
     margin: 30px auto;
     transition-duration: 0.4s;
     cursor: pointer;
+    width: 200px;
+    height: 52px;
+    
   }
 
   .button1 {
@@ -246,6 +281,7 @@ div.desc {
 
 
   .video {
+    background-color: #FAFAFB;
     text-align: center;
   }
 
