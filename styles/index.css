@@ -4,20 +4,20 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Cormorant Garamond", serif;
-    font-family: "Manrope", sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Manrope", sans-serif;
+  list-style: none;
 }
 
-header{
+header {
   background-color: #093931;
   height: 821px;
 }
 
-header .primeraSeccion{
+header .primeraSeccion {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -28,15 +28,34 @@ header .primeraSeccion{
 }
 
 .primeraSeccion .one {
-  grid-column: 1 / 2; /* Primer columna */
+  grid-column: 1 / 2;
+  /* Primer columna */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .primeraSeccion .two {
-  display:flex;
-  grid-column: 2 / 3; /* Segunda columna */
+  display: flex;
+  grid-column: 2 / 3;
+  /* Segunda columna */
   align-items: center;
+}
+
+.primeraSeccion .one button {
+  background-color: #F5D38E;
+  border-radius: 25px;
+  color: #0D554A;
+  margin: 30px auto;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+
+}
+
+.primeraSeccion .one button:hover{
+   background-color: #0D554A;
+    color: white;
+    
 }
 
 section .padreImg{
@@ -47,73 +66,73 @@ section .padreImg{
   width: 50%;
 
 }
-.nav{
+
+.nav {
   display: flex;
   justify-content: right;
+  margin-right: 60px;
 }
 
 .nav a{
-  float: right;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: sans-serif;      
+  font-size: 20px;
+  font-family: sans-serif;
+  white-space: nowrap;   
 }
 
-header h2{
+.nav a:hover {
+  background-color: none;
+  color: #F5D38E;
+  border: 2px solid #F5D38E;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+header h2 {
   font-size: 30px;
-  width: 400px;
+  width: 350px;
   line-height: 46px;
-  font-family: sans-serif;
+  font-weight: 100;
   color: #F5D38E; 
   float: left;
   text-align: center;
   font-family: Manrope;
 }
 
-header .primeraSeccion h2{
+header .primeraSeccion h2 {
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 57px;
   width: 537px;
-  line-height: 46px;
+  line-height: 59px;
   font-family: sans-serif;
-  color: #F5D38E; 
+  color: #F5D38E;
   float: left;
   text-align: center;
   font-family: Cormorant Garamond;
 }
+
 .nav a:hover {
   background-color: none;
   color: #F5D38E;
 }
 
 
-section .img1Header img{
+section .img1Header img {
   width: 350px;
   height: 450px;
   border-radius: 5px;
 }
 
-section .img2Header img{
-  width:241px; 
+section .img2Header img {
+  width: 241px;
   height: 321px;
   border-radius: 50% 50% 0% 0%;
   margin: -130px;
-}
-
-.primeraSeccion .one button {
-  background-color: #F5D38E;
-  border: none;
-  border-radius: 16px;
-  padding: 16px 32px;
-  color: #0D554A;
-  margin: 30px auto;
-  cursor: pointer;
-
 }
 
 h2 {
@@ -136,7 +155,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 .seccion-uno {
@@ -181,13 +200,13 @@ div.desc {
   padding: 15px;
   text-align: left;
   font-size: 16px;
-  
+
 }
 
 .responsive {
   padding: 0 6px;
   float: left;
-  
+
 }
 
 .clearfix:after {
@@ -209,94 +228,95 @@ div.desc {
 }
 
 .imagenes {
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
 
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin: 15px;
-    cursor: pointer;
-    
-    
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 15px;
+  cursor: pointer;
 
-  .container img{
-    width: 360px;
-    height: 360px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
 
-  }
+}
 
-  .container img:hover {
-    border: 1px solid #777;
-    border-radius: 8px;
-  }
+.container img {
+  width: 360px;
+  height: 360px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 
-  #img2, #img5  {
-    transform: translateY(-7%);
-  }
+}
 
-  .centered {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-  }
+.container img:hover {
+  border: 1px solid #777;
+  border-radius: 8px;
+}
+
+#img2,
+#img5 {
+  transform: translateY(-7%);
+}
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+}
 
 .button {
-    background-color:white; 
-    border: 2px solid #0D554A;
-    color: #0D554A;
-    padding: 7px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    border-radius: 25px;
-    margin: 30px auto;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    width: 200px;
-    height: 52px;
-    
-  }
+  background-color: white;
+  border: 2px solid #0D554A;
+  color: #0D554A;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 30px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 200px;
+  height: 52px;
 
-  .button1 {
-    background-color: white; 
-    color:#0D554A; 
-    border: 2px solid #0D554A;
-  }
-  
-  .button1:hover {
-    background-color: #0D554A;
-    color: white;
-  }
+}
 
-  #fondo {
-    background-color: #FAFAFB;
-    
-  }
+.button1 {
+  background-color: white;
+  color: #0D554A;
+  border: 2px solid #0D554A;
+}
 
-  .video {
-    background-color: #FAFAFB;
-    text-align: center;
-  }
+.button1:hover {
+  background-color: #0D554A;
+  color: white;
+}
 
-  .nuestra-historia {
-    margin: 30px auto;
-  }
+#fondo {
+  background-color: #FAFAFB;
+
+}
+
+.video {
+  background-color: #FAFAFB;
+  text-align: center;
+}
+
+.nuestra-historia {
+  margin: 30px auto;
+}
 
   .vid {
     Width: 1176px;
