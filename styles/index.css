@@ -276,47 +276,47 @@ div.desc {
 }
 
 .button {
-  background-color: white;
-  border: 2px solid #0D554A;
-  color: #0D554A;
-  padding: 7px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  border-radius: 25px;
-  margin: 30px auto;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  width: 200px;
-  height: 52px;
+    background-color:white; 
+    border: 2px solid #0D554A;
+    color: #0D554A;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 25px;
+    margin: 30px auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 200px;
+    height: 52px;
+    
+  }
 
-}
+  .button1 {
+    background-color: white; 
+    color:#0D554A; 
+    border: 2px solid #0D554A;
+  }
+  
+  .button1:hover {
+    background-color: #0D554A;
+    color: white;
+  }
 
-.button1 {
-  background-color: white;
-  color: #0D554A;
-  border: 2px solid #0D554A;
-}
+  #fondo {
+    background-color: #FAFAFB;
+    
+  }
 
-.button1:hover {
-  background-color: #0D554A;
-  color: white;
-}
+  .video {
+    background-color: #FAFAFB;
+    text-align: center;
+  }
 
-#fondo {
-  background-color: #FAFAFB;
-
-}
-
-.video {
-  background-color: #FAFAFB;
-  text-align: center;
-}
-
-.nuestra-historia {
-  margin: 30px auto;
-}
+  .nuestra-historia {
+    margin: 30px auto;
+  }
 
   .vid {
     Width: 1176px;
@@ -325,6 +325,61 @@ div.desc {
   }
   
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
    display:grid;
@@ -361,10 +416,8 @@ footer{
     grid-column: 1/2;
     align-items:center;
     margin-top: 20px;
-    justify-content:center;  
-   
+    justify-content:center;     
 }
-
 .logo_ {   
     font-family: Cormorant Garamond;
     font-size: 30px;
@@ -409,16 +462,11 @@ footer{
     font-size: 10px;    
     flex:0px;
     margin-bottom: 10px;
-    
 }
-
-
 form{
     display: flex;
-    flex-direction:row-reverse;
-    
+    flex-direction:row-reverse;  
 }
-
 input{
     background-color: #0D554A;
     border: solid 1px #FAFAFB;
@@ -431,8 +479,7 @@ input{
     border: 1px 0px 0px 0px;
     opacity: 0px;
     color: white;
-    font-size: 10px;
-    
+    font-size: 10px;  
                  
 }
 .boton_pie {
@@ -449,8 +496,6 @@ input{
   width: 45px;
   height: 45px;
   line-height: 45px; 
-
-
 }
 .red{
     position: relative;
