@@ -396,53 +396,56 @@ div.desc {
     font-weight: 600;
     font-size: 10px;
   }
+.pies_de_pagina { 
+  width:100%;
+  background-color:#093931;
+  display: grid;
 
-footer{
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-   background-color:#093931;
-   bottom: 0;
-   width: 100%;
-   color: #FFFFFF;
-   text-decoration: none;
-   height: 255px;
 }
-.lista_1 {
+.pies_de_pagina .grupo1{
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);   
+   max-width: 1200px;
+   gap: 50px;
+   padding: 45px 0px;
+   margin: auto;
+   position: relative;
+}
+.logo_{
+  width: 100%;
+  height: 100%;
+  top: 48px;
+  left: 130px;
+  grid-column: 1/1;
+  align-items:center;
+  justify-content:center;     
+}
+.logo_ {   
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: left;
+  color: #F5D38E;
+  
+}
+.pies_de_pagina .grupo1 .lista_1 {
   padding: 5px;
   font-size: 10px;
-  display:flex;   
-  grid-column: 2 / 3;
+  grid-column: 1 /2;
   align-items:center;
   margin-top: 10px;
   text-overflow: clip;  
-  margin-left: 120px;    
+  margin-left: 250px;    
   line-height: 20px; 
+  left: 200px;
 }
+
 .lista_1 a {
   color: #FFFFFF;
   text-decoration: none;
  }
-.logo_{
-    width: 95px;
-    height: 46px;
-    top: 48px;
-    position: relative;
-    left: 13px;
-    display: flex;
-    grid-column: 1/2;
-    align-items:center;
-    margin-top: 20px;
-    justify-content:center;     
-}
-.logo_ {   
-    font-family: Cormorant Garamond;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 46px;
-    text-align: left;
-    color: #F5D38E;
-    
-}
+
 .lista2{
     color:#FFFFFF;
     text-decoration: none;
@@ -451,7 +454,7 @@ footer{
     display:flex;   
     align-items:left;
     margin-bottom: 10px;
-    grid-column: 3/4;
+    grid-column: 2/3;
     align-items:center;
     margin-top: 10px;
     text-overflow: clip;  
@@ -478,6 +481,7 @@ footer{
     font-size: 10px;    
     flex:0px;
     margin-bottom: 10px;
+    color: #FFFFFF;
 }
 form{
     display: flex;
@@ -519,10 +523,17 @@ input{
     padding: 8px 10px;
  }
 .derechos{
-    display: flex;
+    color: #FFFFFF;
     font-size: 10px;
-    align-items:center;
-    flex-direction: column;   
     position: relative;
     top: 160px;   
 }
+@media screen and ( max-width:800px) {
+  .pies_de_pagina{
+    grid-template-columns: repeat(1, 1fr);   
+    width: 100%;
+    gap: 30px;
+    padding: 35px 0px;
+ }
+}
+  
