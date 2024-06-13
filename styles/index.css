@@ -4,20 +4,20 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Cormorant Garamond", serif;
-    font-family: "Manrope", sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Manrope", sans-serif;
+  list-style: none;
 }
 
-header{
+header {
   background-color: #093931;
   height: 821px;
 }
 
-header .primeraSeccion{
+header .primeraSeccion {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -28,18 +28,21 @@ header .primeraSeccion{
 }
 
 .primeraSeccion .one {
-  grid-column: 1 / 2; /* Primer columna */
+  grid-column: 1 / 2;
+  /* Primer columna */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .primeraSeccion .two {
-  display:flex;
-  grid-column: 2 / 3; /* Segunda columna */
+  display: flex;
+  grid-column: 2 / 3;
+  /* Segunda columna */
   align-items: center;
 }
 
-section .padreImg{
+section .padreImg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,12 +50,13 @@ section .padreImg{
   width: 50%;
 
 }
-.nav{
+
+.nav {
   display: flex;
   justify-content: right;
 }
 
-.nav a{
+.nav a {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -60,46 +64,47 @@ section .padreImg{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: sans-serif;      
+  font-family: sans-serif;
 }
 
-header h2{
+header h2 {
   font-size: 30px;
   width: 400px;
   line-height: 46px;
   font-family: sans-serif;
-  color: #F5D38E; 
+  color: #F5D38E;
   float: left;
   text-align: center;
   font-family: Manrope;
 }
 
-header .primeraSeccion h2{
+header .primeraSeccion h2 {
   display: flex;
   align-items: center;
   font-size: 30px;
   width: 537px;
   line-height: 46px;
   font-family: sans-serif;
-  color: #F5D38E; 
+  color: #F5D38E;
   float: left;
   text-align: center;
   font-family: Cormorant Garamond;
 }
+
 .nav a:hover {
   background-color: none;
   color: #F5D38E;
 }
 
 
-section .img1Header img{
+section .img1Header img {
   width: 350px;
   height: 450px;
   border-radius: 5px;
 }
 
-section .img2Header img{
-  width:241px; 
+section .img2Header img {
+  width: 241px;
   height: 321px;
   border-radius: 50% 50% 0% 0%;
   margin: -130px;
@@ -136,7 +141,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 .seccion-uno {
@@ -181,13 +186,13 @@ div.desc {
   padding: 15px;
   text-align: left;
   font-size: 16px;
-  
+
 }
 
 .responsive {
   padding: 0 6px;
   float: left;
-  
+
 }
 
 .clearfix:after {
@@ -209,289 +214,174 @@ div.desc {
 }
 
 .imagenes {
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
 
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin: 15px;
-    cursor: pointer;
-    
-    
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 15px;
+  cursor: pointer;
 
-  .container img{
-    width: 360px;
-    height: 360px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
 
-  }
+}
 
-  .container img:hover {
-    border: 1px solid #777;
-    border-radius: 8px;
-  }
+.container img {
+  width: 360px;
+  height: 360px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 
-  #img2, #img5  {
-    transform: translateY(-7%);
-  }
+}
 
-  .centered {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-  }
+.container img:hover {
+  border: 1px solid #777;
+  border-radius: 8px;
+}
+
+#img2,
+#img5 {
+  transform: translateY(-7%);
+}
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+}
 
 .button {
-    background-color:white; 
-    border: 2px solid #0D554A;
-    color: #0D554A;
-    padding: 7px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    border-radius: 25px;
-    margin: 30px auto;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    width: 200px;
-    height: 52px;
-    
-  }
-
-  .button1 {
-    background-color: white; 
-    color:#0D554A; 
-    border: 2px solid #0D554A;
-  }
-  
-  .button1:hover {
-    background-color: #0D554A;
-    color: white;
-  }
-
-  #fondo {
-    background-color: #FAFAFB;
-    
-  }
-
-  .video {
-    background-color: #FAFAFB;
-    text-align: center;
-  }
-
-  .nuestra-historia {
-    margin: 30px auto;
-  }
-
-  .vid {
-    Width: 1176px;
-    height:368px;
-    border-radius: 8px;
-  }
-  
-  .ultima-seccion {
-    background-color:#093931;   
-    padding: auto;
-    margin: auto;
-    height: 400px;
-    margin-top: 100px;
-   
-}
-.text-aside h2{
-    display: flex;
-    width: 200px;  
-    height: 40px;
-    color:#FFFFFF;
-    font-family: Cormorant Garamond;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 68px;
-    text-align: center;  
-    margin: 10% 15%;  
-
-    
-}
-.text-aside p{
-    display:flex ;
-    color:#FFFFFF;
-    font-weight: 400;
-    line-height: 20px; 
-    justify-content: center;
-    padding: 5px;
-    text-align:center;
-    align-items:center;
-    
-  
-}
-aside{
-    background-color: #171A1F4D;
-    display: flex;
-    width: 600px;
-    height: 255px;
-    border-radius: 8px;
-    left: 612px;   
-    float: right;  
-    padding: 5px;
-    margin: -150px 150px 150px 200px;  
-     
+  background-color: white;
+  border: 2px solid #0D554A;
+  color: #0D554A;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 30px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 200px;
+  height: 52px;
 
 }
+
+.button1 {
+  background-color: white;
+  color: #0D554A;
+  border: 2px solid #0D554A;
+}
+
+.button1:hover {
+  background-color: #0D554A;
+  color: white;
+}
+
+#fondo {
+  background-color: #FAFAFB;
+
+}
+
+.video {
+  background-color: #FAFAFB;
+  text-align: center;
+}
+
+.nuestra-historia {
+  margin: 30px auto;
+}
+
+.vid {
+  Width: 1176px;
+  height: 368px;
+  border-radius: 8px;
+}
+
+.ultima-seccion {
+  background-color: #093931;
+  padding: auto;
+
+  height: auto;
+  margin-top: 100px;
+
+}
+
+.text-aside h2 {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  color: #FFFFFF;
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 68px;
+  text-align: center;
+  margin: 1px 180px;
+
+}
+
+.text-aside p {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 5px;
+  text-align: justify;
+  align-items: center;
+  margin: 100px 200px 80px 150px;
+
+}
+
+aside {
+  background-color: #171A1F4D;
+  display: flex;
+  width: 600px;
+  height: 255px;
+  border-radius: 8px;
+  left: 612px;
+  margin: -150px 10px 1px 50px;
+  position: relative;
+}
+
 .foto {
-    display:inline-flex;
-    width: 200px;  
-    height: 250px;
-    flex-direction:row;
-    margin-left: auto;
+  display: inline-flex;
+  width: 200px;
+  height: 250px;
+  flex-direction: row;
+  margin-left: auto;
 
 }
 
-.section-2 p{
-    display: flex;
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 30px;
-    color:#FFFFFF;
+.section-2 p {
+  display: flex;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #FFFFFF;
 }
+
 span {
-    display: flex;
-    height: 50px;
-    color:#FFFFFF;
-    flex-direction:row;
-    line-height: 20px;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-footer{
-   display:grid ;
-   grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr;
-   background-color:#093931;
-   bottom: 0;
-   width: 100%;
-   color: #FFFFFF;
-   text-decoration: none;
-   height: 234px;
-}
-.div_one1 ul li a{
-    color:#FFFFFF;
-    text-decoration: none;
-    padding: 5px;
-    font-size: 18px;
-    display:flex;   
-    grid-column: 2 / 3;
-    align-items:center;
-    margin-top: 10px;
-    
-    
-}
-h1 .logo_{
-    width: 95px;
-    height: 46px;
-    top: 48px;
-    left: 132px;
-    display: flex;
-    grid-column: 1/2;
-    align-items:center;
-    margin-top: 10px;
-   
-}
-
-.logo_{   
-    font-family: Cormorant Garamond;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 46px;
-    text-align: left;
-    color: #F5D38E;
-  
-}
-.div_two  ul li a{
-    color:#FFFFFF;
-    text-decoration: none;
-    padding: 5px;
-    font-size: 18px;
-    display:flex;   
-    align-items:left;
-    margin-bottom: 10px;
-    grid-column: 3/4;
-    align-items:center;
-    margin-top: 10px;
-  
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    float: right;
-   
-}
-.div_3 span{
-    display: flex;
-    flex-wrap: wrap;
-    align-items:left;
-    font-size: 18px;
-    line-height: 3px; 
-    font-weight: 400;
-    
-}
-
-.red{
-    display: inline-block;
-    text-decoration: none;
-    color:#FFFFFF;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
-}
-
-form{
-    display: flex;
-    flex-direction:row-reverse;
-}
-
-input{
-    border: solid 2px #00000000;
-    width: 269px;
-    height: 35px;
-    top: 114px;
-    left: 924px;
-    padding: 7px 132px 6px 12px;
-    gap: 0px;
-    border-radius: 18px 0px 0px 18px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-                 
-}
-.boton_pie {
-    width: 150px;
-    background-color:#F2C66D;
-    border-radius:  0px 50px 50px 0px ;
-    border: none;
-    
-}
-.derechos{
-    grid-column: 7/8;
-    align-items:center;
-    margin-top: 10px; 
-    align-items:center;
-    margin-top: 10px;
+  display: flex;
+  height: 50px;
+  color: #FFFFFF;
+  flex-direction: row;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 15px;
 }
