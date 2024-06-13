@@ -42,7 +42,23 @@ header .primeraSeccion {
   align-items: center;
 }
 
-section .padreImg {
+.primeraSeccion .one button {
+  background-color: #F5D38E;
+  border-radius: 25px;
+  color: #0D554A;
+  margin: 30px auto;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+
+}
+
+.primeraSeccion .one button:hover{
+   background-color: #0D554A;
+    color: white;
+    
+}
+
+section .padreImg{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,25 +70,34 @@ section .padreImg {
 .nav {
   display: flex;
   justify-content: right;
+  margin-right: 60px;
 }
 
-.nav a {
-  float: right;
-  display: block;
+.nav a{
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   font-family: sans-serif;
+  white-space: nowrap;   
+}
+
+.nav a:hover {
+  background-color: none;
+  color: #F5D38E;
+  border: 2px solid #F5D38E;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 header h2 {
   font-size: 30px;
-  width: 400px;
+  width: 350px;
   line-height: 46px;
-  font-family: sans-serif;
-  color: #F5D38E;
+  font-weight: 100;
+  color: #F5D38E; 
   float: left;
   text-align: center;
   font-family: Manrope;
@@ -81,9 +106,9 @@ header h2 {
 header .primeraSeccion h2 {
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 57px;
   width: 537px;
-  line-height: 46px;
+  line-height: 59px;
   font-family: sans-serif;
   color: #F5D38E;
   float: left;
@@ -108,17 +133,6 @@ section .img2Header img {
   height: 321px;
   border-radius: 50% 50% 0% 0%;
   margin: -130px;
-}
-
-.primeraSeccion .one button {
-  background-color: #F5D38E;
-  border: none;
-  border-radius: 16px;
-  padding: 16px 32px;
-  color: #0D554A;
-  margin: 30px auto;
-  cursor: pointer;
-
 }
 
 h2 {
