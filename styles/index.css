@@ -7,6 +7,7 @@
   --color-primary: #093931;
   --color-secondary: #F5D38E;
   --color-tertiary: #fff;
+  --color-paragraph: #9095A0;
   --tipography-titles: "Cormorant Garamond", serif;
   --tipography-text: "Manrope", sans-serif;
 }
@@ -155,7 +156,7 @@ h3 {
 
 
 .parrafo {
-  color: #9095A0;
+  color: var(--color-paragraph);
 }
 
 .uno {
@@ -182,6 +183,7 @@ h3 {
   flex-direction: row;
   padding: 60px;
   overflow: hidden;
+  align-items: center;
 }
 
 .cards1 {
@@ -276,10 +278,6 @@ div.desc h3 {
   border-radius: 8px;
 }
 
-#img2,
-#img5 {
-  transform: translateY(-7%);
-}
 
 .centered {
   position: absolute;
@@ -327,6 +325,7 @@ div.desc h3 {
   .video {
     background-color: #FAFAFB;
     text-align: center;
+    
   }
 
   .nuestra-historia {
@@ -335,9 +334,18 @@ div.desc h3 {
   }
 
   .vid {
-    Width: 1176px;
+    width: 100%;
+    height:368px;
+    min-width: 600px;
+    
+  }
+
+  .vid video {
+    width: 1176px;
     height:368px;
     border-radius: 8px;
+    object-fit: cover;
+    
   }
   .ultima-seccion {
     background-color:var(--color-primary);
@@ -548,4 +556,16 @@ input{
     flex-direction: column;
   }
   
+}
+
+@media (min-width: 1025px) {
+  #img2,
+  #img5 {
+    transform: translateY(-7%);
+  }
+  
+}
+
+@media (max-width: 1024px) {
+
 }
