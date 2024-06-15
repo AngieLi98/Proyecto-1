@@ -555,7 +555,7 @@ input{
     font-size: 10px;
     position: relative;
     top: 45px; 
-    left: 40px;  
+    left:40px; 
 }
 
 @media (max-width: 600px){
