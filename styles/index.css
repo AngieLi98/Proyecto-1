@@ -8,6 +8,8 @@
   --color-secondary: #F5D38E;
   --color-tertiary: #fff;
   --color-paragraph: #9095A0;
+  --color-botones: #f5d38eff;
+  --color-aside:#171A1F4D;
   --tipography-titles: "Cormorant Garamond", serif;
   --tipography-text: "Manrope", sans-serif;
 }
@@ -333,30 +335,14 @@ div.desc h3 {
     
   }
 
-<<<<<<< HEAD
-  .vid {
-    width: 100%;
-    height:368px;
-    min-width: 600px;
-    
-  }
-
-  .vid video {
+.vid video {
     width: 1176px;
     height:368px;
     border-radius: 8px;
     object-fit: cover;
     
-  }
-  .ultima-seccion {
-=======
-.vid {
-    Width: 1176px;
-    height:368px;
-    border-radius: 8px;
 }
 .ultima-seccion {
->>>>>>> 69d7be3a93d5cdd06fcf76f224908134471d16b4
     background-color:var(--color-primary);
     width: 100%;
     height: 345px;
@@ -400,6 +386,9 @@ div.desc h3 {
     line-height: 30px;
     color: var(--color-tertiary);
 }
+.img_footer{ 
+  display:flex;
+}
 figure img{ 
     display:inline-flex;
     width: 205px;  
@@ -410,17 +399,37 @@ figure img{
 
 }
 aside {    
-    background-color: #171A1F4D;
+    background-color:var(--color-aside);
     display: flex;
     width: 650px;
     height: 255px;
     border-radius: 8px;
     position: relative;   
     right:90px;
-    top: 38px;
-    
-    
+    top: 38px;       
 }
+.text_foto button{
+  position:relative;
+  left:320px;
+  bottom:60px;
+  gap:1.25rem;
+}
+
+.text_foto button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;    
+  border: none;  
+  
+}
+
+.text_foto button:hover svg path {
+  stroke: var(--color-botones);
+  fill: var(--color-botones);
+   
+}
+
+
 span {
     display: flex;
     height: 50px;
@@ -433,7 +442,9 @@ span {
     position: relative;
     left: 10px;
 }
+
 footer{ 
+
   background-color:var(--color-primary);
   font-family: var(--tipography-text);
   width: 100%;
@@ -447,6 +458,7 @@ footer{
   text-decoration: none;  
 }
 .logo_{
+  display: flex;
   left: 50px;
   position: relative;
   top: 50px;
@@ -467,6 +479,7 @@ footer{
   line-height: 20px; 
   margin-left: 180px;
 
+
 }
 .lista_1 a {
   color: var(--color-tertiary);
@@ -476,15 +489,17 @@ footer{
   right: 270px; 
   top: 50px;
   text-align: center;
+  
 }
 
 .lista2 ul li{
   padding: 5px;
   font-size: 12px;
-  display: grid;
+  display:grid;
   margin-top: 10px;
   line-height: 20px; 
-  margin-left: 180px;
+  margin-left: 200px;
+  
 
 }
 .lista2 a {
@@ -496,7 +511,7 @@ footer{
 }
 
 .box{
-    display: grid;
+    display: flex;
     flex-direction: column;
     margin-left: 10px;
     align-items: flex-start;
@@ -562,14 +577,17 @@ input{
     top: 45px; 
     left: 40px;  
 }
-@media screen and ( max-width:800px) {
-  footer{
+@media screen and ( min-width:600px) { 
+  
+  footer{   
     grid-template-columns: repeat(1,1fr);   
-    width: 100%;
+    width: 80%;
     gap: 20px;
     padding: 20px 0px;
- }
+ } 
 }
+
+
 @media (min-width: 1025px) {
   footer{
     grid-template-columns: repeat(4,1fr);   
@@ -592,8 +610,4 @@ input{
     transform: translateY(-7%);
   }
   
-}
-
-@media (max-width: 1024px) {
-
 }
