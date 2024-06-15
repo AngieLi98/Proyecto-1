@@ -184,7 +184,7 @@ h3 {
   padding: 60px;
   overflow: hidden;
   align-items: center;
-  flex-wrap: wrap;
+  
 }
 
 .cards1 {
@@ -222,7 +222,7 @@ div.desc h3 {
 }
 
 .responsive {
-  padding: 0 8px;
+  padding: 8px 8px;
   float: left;
 
 }
@@ -243,6 +243,7 @@ div.desc h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .imagenes {
@@ -326,6 +327,11 @@ div.desc h3 {
   .video {
     background-color: #FAFAFB;
     text-align: center;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .nuestra-historia {
@@ -333,18 +339,18 @@ div.desc h3 {
     
   }
 
-  .vid {
-    Width: 1176px;
+  .vid video {
+    width: 1176px;
     height:368px;
     border-radius: 8px;
-
-
+    object-fit: cover;
+    
   }
   .ultima-seccion {
     background-color:var(--color-primary);
     padding: auto;  
     height: auto;
-    margin-top: 100px;
+    
 
   }
   .text-aside{
@@ -544,12 +550,13 @@ input{
     top: 160px;   
 }
 
-@media (max-width: 850px){
+@media (max-width: 600px){
   .uno {
     flex-direction: column;
   }
   
 }
+
 
 @media (min-width: 1025px) {
   #img2,
@@ -559,6 +566,19 @@ input{
   
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 850px){
+  .Galeria {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .vid video { 
+    width: 588px;
+    height:182px;
+}
 
 }
