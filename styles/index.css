@@ -551,7 +551,9 @@ input{
   font-size: 20px;
 }
 .derechos{
-    color: #FFFFFF;
+   width: 7%;
+   height: 20px;
+   color: #FFFFFF;
     font-size: 10px;
     position: relative;
     top: 45px; 

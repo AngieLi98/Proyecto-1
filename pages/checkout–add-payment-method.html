@@ -8,27 +8,76 @@
     <title>Listado de Productos</title>
 </head>
 <body>
-    <header>
-        <h2>Darling.</h2>
-      <nav class="nav">       
-        <a href="#home">Inicio</a>
-        <a href="#about">Tienda</a>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a class="header__logo" href="">Darling .</a>
+      </div>
+      <div class="Enlaces">
+        <a href="/Proyecto-1/index.html">Inicio</a>
+        <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
         <a href="#contact">Colecciones</a>
         <a href="#services">Acerca de</a>
         <a href="#contact">Contacto</a>
         <a href="#user"><i class="fa-solid fa-user"></i></a>
-        <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>         
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div>
+        <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+    <hr>
+  </header>
+  <main>
+      <section class="productos-agregados">
+        <div><h2>Resumen del pedido</h2></div>
+        <div class="fotos-escogidas"> 
+         <div class="filas">
+           <article>
+            <figure class="escogida1">
+              <img src="/Proyecto-1/assets/img/img-11.jpeg" alt="Anillo de encantos de lujo">
+            </figure>
+           </article>
+           <div class="texto-codigo1">
+            <p>Anillo de encantos de lujo</p>
+            <span>code: 78205</span>
+           </div>
+           <div class="valor-1"><span>620.73</span></div>
+           <span class="bote"><i class="fa-light fa-trash-can" style="color: #0d0c0c;"></i></span>
+         </div>
+         <div class="filas">
+          <article>
+            <figure class="escogida2">
+              <img src="/Proyecto-1/assets/img/img-2.jpeg" alt="Pendientes exquisitos">
+            </figure>
+           </article>
+           <div class="texto-codigo1">
+            <p>Pendientes exquisitos</p>
+            <span>code: 92701</span>
+           </div>
+           <div class="valor-1"><span>125.28</span></div>
+           <span class="bote"><i class="fa-light fa-trash-can" style="color: #0d0c0c;"></i></span>
+         </div>
+         <div class="filas">
+          <article>
+            <figure class="escogida3">
+              <img src="/Proyecto-1/assets/img/img-4.jpeg" alt="Pendientes Delicias">
+            </figure>
+           </article>          
+          </div>
+          <div class="texto-codigo1">
+            <p>Pendientes Delicias</p>
+            <span>code: 78201</span>
+           </div>
+           <div class="valor-1"><span>327.71</span></div>
+           <span class="bote"><i class="fa-light fa-trash-can" style="color: #0d0c0c;"></i> </span> 
+        </div>
+      </section>
+      <section class="metodos-de-pago">
+        <div class="metodo">
           <h2>
             Método de pago
           </h2>
           <span>Cambiar métodos de pago</span>
         </div>
-        <div>
+        <div class="pago-tarjeta">
           <form action="">            
              <input type="text" name="mastercard" id="">
           </form>
@@ -37,6 +86,24 @@
               <img src="/Proyecto-1/assets/img/master card.png" alt="mastercard">
             </figure>
           </article>
+        </div>
+        <div class="ingresos-de-valores">
+          <h4>Vale</h4>
+          <form action="">
+            <input type="text" name="precio" id="">
+          </form>
+          <button type="submit">Aplicar</button>
+          <span>$15 Off</span>
+        </div>
+        <div class="total-de-productos">
+          <h3>Resumen</h3>
+          <span class="valores">Subtotal <small>$1073.72</small></span>
+          <span class="valores">Descuento <small>-$15</small></span>
+          <span class="valores">Tarifa <small>$0</small></span>
+          <span class="valores-total">total <small>$1058.72</small></span>
+        </div>
+        <div class="boton-finalizar-pago">
+          <button type="submit">Proceder al pago</button>
         </div>
       </section>
      <section class="Galeria" id="fondo"> <!-- 3ra galeria en cards-->
@@ -107,7 +174,7 @@
             <ul> 
               <li> 
                 <a href="##">Acerca de</a>
-                <a href="##">Tienda</a>
+                <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
                 <a href="##">Colecciones</a>
               </li>  
             </ul>   
@@ -116,7 +183,7 @@
            <ul>  
               <li>
                   <a href="##">Tèrminos</a>
-                  <a href="##">Privacidad</a>     
+                  <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>     
                   <a href="##">Contacto</a>  
               </li>
            </ul>   

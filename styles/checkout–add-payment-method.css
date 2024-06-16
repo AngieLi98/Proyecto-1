@@ -7,8 +7,15 @@
   --color-primary: #093931;
   --color-secondary: #F5D38E;
   --color-tertiary: #fff;
+  --color-code: #565E6C;
+  --color-metodo: #379AE6;
+  --color-button-enviar: #F2C66D;
+  --color-precio-span: #8F640C;
+  --color-texto-medio-de-pago: #171a1f;
+  --color-del-valor-total:#E8502E;
   --tipography-titles: "Cormorant Garamond", serif;
   --tipography-text: "Manrope", sans-serif;
+
 }
 
 * {
@@ -17,24 +24,25 @@
   box-sizing: border-box;
   list-style: none;
 }
-
-header {
-  background-color: var(--color-primary);
-  height: 55px;
-}
-
 .nav {
+  background-color: var(--color-primary);
   display: flex;
-  justify-content: right;
-  margin-right: 60px;
+  justify-content: space-between;
+  padding: 10px 132px;
 }
-
-.nav a{
+header .nav .header__logo {
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 400;
+  color: var(--color-secondary); 
+  font-family: var(--tipography-titles);
+}
+.nav .Enlaces a{
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   font-family: var(--tipography-text);
   white-space: nowrap;   
 }
@@ -42,23 +50,64 @@ header {
 .nav a:hover {
   background-color: none;
   color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-  border-radius: 25px;
+  border-radius: 3px;
   cursor: pointer;
   text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 14px;
 }
-  
-  header h2{
-    font-size: 30px;
-    width: 350px;
-    line-height: 46px;
-    font-weight: 100;
-    color: #F5D38E; 
-    float: left;
-    text-align: center;
-    font-family: Manrope;
-  }
-  .Galeria {
+
+
+
+
+section .productos-agregados h2{
+   color: var(--color-texto-medio-de-pago);
+   font-family: var(--tipography-titles);
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 36px;
+   width: 152px;
+   height: 36px;
+   
+}
+.productos-agregados{
+  width: 800px;
+  height: 498px;
+  border-radius: 4px;
+  margin-top: 108px;
+  margin-left: 132px;
+}
+.productos-agregados h2{
+  display: flex;
+  align-content: flex-start;
+}
+.fotos-escogidas{
+  width: 44.012rem;
+  height: 26.124rem;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  top: 3.5rem;
+  left: 1.5rem;
+  gap: 25px;
+  border: 1px solid #FFFFFF;
+}
+.filas{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.escogida1{
+  display: flex;
+  width: 9.69rem;
+  height: 8.708rem;
+ 
+}
+.texto-codigo1{
+  width: 15.58rem;
+  height: 8.708rem;
+  margin-left: 9.69rem;
+}
+.Galeria {
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -193,83 +242,6 @@ header {
       background-color: #0D554A;
       color: white;
     }
-.ultima-seccion {
-    background-color:var(--color-primary);
-    width: 100%;
-    height: 345px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.text-aside{
-     position: relative;
-     top:50px;
-}
-.text-aside h2 {
-    display: flex;
-    width: 200px;
-    height: 40px;
-    color: var(--color-tertiary);
-    font-family: var(--tipography-titles);
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 68px;
-    text-align: center;  
-    position: relative;
-    left: 180px;
-}
-.text-aside p {   
-    display: flex;
-    width: 200px;
-    height: 40px;
-    color: var(--color-tertiary);
-    font-weight: 400;
-    line-height: 30px;
-    padding: 5px;
-    text-align: justify;
-    align-items: center;
-    margin: 100px 200px 80px 150px;
-}
-.section-2 p {
-    display: flex;
-    font-family: var(--tipography-titles);
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 30px;
-    color: var(--color-tertiary);
-}
-figure img{ 
-    display:inline-flex;
-    width: 205px;  
-    height: 255px;
-    flex-direction:row;
-    margin-left: auto;
-    border-radius: 8px 0px 0px 8px;
-
-}
-aside {    
-    background-color: #171A1F4D;
-    display: flex;
-    width: 650px;
-    height: 255px;
-    border-radius: 8px;
-    position: relative;   
-    right:90px;
-    top: 38px;
-    
-    
-}
-span {
-    display: flex;
-    height: 50px;
-    flex-direction: column;
-    color: var(--color-tertiary);
-    line-height: 10px;
-    font-weight: 600;
-    font-size: 10px;
-    text-align:justify;
-    position: relative;
-    left: 10px;
-}
 footer{ 
   background-color:var(--color-primary);
   font-family: var(--tipography-text);
@@ -393,12 +365,15 @@ input{
   font-size: 20px;
 }
 .derechos{
-    color: #FFFFFF;
+   width: 7%;
+   height: 20px;
+   color: #FFFFFF;
     font-size: 10px;
     position: relative;
     top: 45px; 
-    left: 40px;  
+    left:40px; 
 }
+
 @media screen and ( max-width:800px) {
   footer{
     grid-template-columns: repeat(1,1fr);   
