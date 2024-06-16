@@ -7,8 +7,15 @@
   --color-primary: #093931;
   --color-secondary: #F5D38E;
   --color-tertiary: #fff;
+  --color-code: #565E6C;
+  --color-metodo: #379AE6;
+  --color-button-enviar: #F2C66D;
+  --color-precio-span: #8F640C;
+  --color-texto-medio-de-pago: #171a1f;
+  --color-del-valor-total:#E8502E;
   --tipography-titles: "Cormorant Garamond", serif;
   --tipography-text: "Manrope", sans-serif;
+
 }
 
 * {
@@ -57,8 +64,55 @@ header {
     float: left;
     text-align: center;
     font-family: Manrope;
-  }
-  .Galeria {
+}
+section .productos-agregados h2{
+   color: var(--color-texto-medio-de-pago);
+   font-family: var(--tipography-titles);
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 36px;
+   width: 152px;
+   height: 36px;
+   
+}
+.productos-agregados{
+  width: 800px;
+  height: 498px;
+  border-radius: 4px;
+  margin-top: 108px;
+  margin-left: 132px;
+}
+.productos-agregados h2{
+  display: flex;
+  align-content: flex-start;
+}
+.fotos-escogidas{
+  width: 44.012rem;
+  height: 26.124rem;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  top: 3.5rem;
+  left: 1.5rem;
+  gap: 25px;
+  border: 1px solid #FFFFFF;
+}
+.filas{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.escogida1{
+  display: flex;
+  width: 9.69rem;
+  height: 8.708rem;
+ 
+}
+.texto-codigo1{
+  width: 15.58rem;
+  height: 8.708rem;
+  margin-left: 9.69rem;
+}
+.Galeria {
     display: flex;
     flex-direction: row;
     overflow: hidden;
