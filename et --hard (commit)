@@ -1,0 +1,263 @@
+[33mcommit 65990679b4be1c54ef713afe49df7860aecf9bc0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Sat Jun 15 13:35:56 2024 -0500
+
+    inicio de la pagina listado de productos
+
+[33mcommit 6e8004bc2700d434aedeb6989b5ef8819e4400fc[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 14 19:28:12 2024 -0500
+
+    organizacion del video con el responsice y el main
+
+[33mcommit 2733ebc39392169f379b00940de55640772569f7[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 14 19:22:46 2024 -0500
+
+    se termino el responsivo del main
+
+[33mcommit a8ab374d89e7c8195258c39385028c8c0ad70380[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 14 17:25:45 2024 -0500
+
+    aceptacion de cambios
+
+[33mcommit 45ed5e56bc19592dbb56b3c0a710c2b28bd48103[m
+Merge: 5425983 69d7be3
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 14 15:59:41 2024 -0500
+
+    se agrego un color en el root y se adapto en resposive la segunda galeria
+
+[33mcommit 5425983fb8d5aa6736879d6e492eb3833eba3a2d[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 14 15:56:22 2024 -0500
+
+    se agrego un color en el root y se adapto en resposive la segunda galeria
+
+[33mcommit 69d7be3a93d5cdd06fcf76f224908134471d16b4[m
+Merge: 9b58555 86ede49
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Fri Jun 14 07:28:48 2024 +0200
+
+    Merge branch 'main' of https://github.com/AngieLi98/Proyecto-1
+
+[33mcommit 9b585559dab54c669779d62a21bd6ff3b645f0dd[m
+Merge: a588581 f822d53
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Fri Jun 14 07:28:04 2024 +0200
+
+    arreglos para un footer responsive, ultima seccion y avances de la pagina medios de pago
+
+[33mcommit 86ede49e8ac6effc4f64f3062678cd57932485ba[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Thu Jun 13 21:25:28 2024 -0500
+
+    organizacion entre los titulos y secciones de main y responsive de la primera seccion
+
+[33mcommit a588581ae5211b5d682c33041d58ff42e316e130[m
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Fri Jun 14 01:05:34 2024 +0200
+
+    cambios en el footer
+
+[33mcommit f822d533908794eda2fdcfdbd66e13f449f69935[m
+Merge: 79ddc59 30e2c17
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Thu Jun 13 15:53:12 2024 -0500
+
+    creacion y aplicaion de variables generales
+
+[33mcommit 79ddc594721dc787b428d42ca04e7b8410cdd653[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Thu Jun 13 15:21:20 2024 -0500
+
+    borre el footer para recibir cambios
+
+[33mcommit 30e2c17b71a6f6e2c83574c868556609338b1bbe[m
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Wed Jun 12 23:52:05 2024 +0200
+
+    proyecto al 100%
+
+[33mcommit 326f4dc2f90ffe3f870184787412fa22a223e2f7[m
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Wed Jun 12 23:03:05 2024 +0200
+
+    avance al 80%
+
+[33mcommit 86693c98cb57c39c1729c8fc04678c7d9d3d3414[m
+Merge: efc7248 fc9c8fb
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Wed Jun 12 22:59:38 2024 +0200
+
+    Merge branch 'main' of https://github.com/AngieLi98/Proyecto-1
+
+[33mcommit fc9c8fba01a6f27ba24f680f2bca43b236201a16[m
+Merge: c3d0825 bb3452e
+Author: Luisa <Luisamtag@gmail.com>
+Date:   Wed Jun 12 21:49:59 2024 -0500
+
+    ultima sesion realizada en un 80%
+
+[33mcommit c3d0825eafc860122d679109bb7d346bdbb606e8[m
+Author: Luisa <Luisamtag@gmail.com>
+Date:   Wed Jun 12 21:41:21 2024 -0500
+
+    ultima sesion realizada en un 80%
+
+[33mcommit efc72487b0fab1dc84c9a120d88be045657f42f4[m
+Author: Josephinevaloyes <josevaco19@gmail.com>
+Date:   Wed Jun 12 22:35:50 2024 +0200
+
+    footer 100
+
+[33mcommit bb3452ebf0e19b2e18b95c9dd02ec5358dd99348[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Wed Jun 12 13:55:31 2024 -0500
+
+    creacion y vinculacion de las pages con su propia redireccion al css de cada una con el nav incluido
+
+[33mcommit 9055294065d1bcc03e5c341715b7b1e2c5656b0f[m
+Author: gercek1 <olcanchano@gmail.com>
+Date:   Wed Jun 12 13:23:54 2024 -0500
+
+    Completado el header al 99%
+
+[33mcommit 470176f1734f166a93ce8ece6582cd9d8ef2ca2a[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Tue Jun 11 18:06:11 2024 -0500
+
+    incrustacion de la ultima seccion y el footer en un 80% (eliminacion de carpetas innecesarias)
+
+[33mcommit 5660bd27739e2521ee5d06f55894191b17ea468f[m
+Author: Josefina Valoyes <93234678+JosephineValoyes@users.noreply.github.com>
+Date:   Wed Jun 12 00:23:40 2024 +0200
+
+    Add files via upload
+    
+    Avances del footer
+
+[33mcommit 7bc37d47e28b8107accb175e356f821ffdabe772[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Tue Jun 11 15:31:41 2024 -0500
+
+    correciones de todas las galerias
+
+[33mcommit d8433805fad9b29710538386a4f3adffa73933b4[m
+Author: gercek1 <olcanchano@gmail.com>
+Date:   Mon Jun 10 22:13:45 2024 -0500
+
+    creacion de la galeria #2 al 90% completada
+
+[33mcommit 86103aa6fa34f4ea1724814653d991e3e04254c8[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Mon Jun 10 21:35:43 2024 -0500
+
+    importacion y cambio de la tipografia y galeria 1 terminada en un 90%
+
+[33mcommit d76dc2f7970c595f2be4019a1d40b5fa96dc1bc4[m
+Merge: c511c45 fad3f69
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Mon Jun 10 17:22:16 2024 -0500
+
+    combinacion del pull hasta ahora
+
+[33mcommit c511c45d96403ddee743c19f3eee0cb1282aebc5[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Mon Jun 10 17:15:14 2024 -0500
+
+    inicio de la primera galeri en un 70%
+
+[33mcommit fad3f690586dff41b35c4398d4e2f43df6bbd0e3[m
+Merge: 0c06790 74f4bb3
+Author: gercek1 <olcanchano@gmail.com>
+Date:   Mon Jun 10 17:12:56 2024 -0500
+
+    combinacion de header 90%  con primeras sesiones terminadas de angie
+
+[33mcommit 0c06790826b51a5a83b5b04cfb56ef17980d346f[m
+Author: gercek1 <olcanchano@gmail.com>
+Date:   Mon Jun 10 17:06:38 2024 -0500
+
+     se termino en un 90% el header a espera de correciones
+
+[33mcommit 74f4bb34a060bc145ac378a567a2e05a7866d63c[m
+Author: Josefina Valoyes <93234678+JosephineValoyes@users.noreply.github.com>
+Date:   Mon Jun 10 15:47:40 2024 -0500
+
+    "inicio del footer"
+
+[33mcommit 07feefaeaca33e4ffa055d499b494c07ad8a7ab8[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Mon Jun 10 13:56:50 2024 -0500
+
+    terminada seccion uno (esta debajo de header)
+
+[33mcommit 72c16f23e2ad85e0906a47586ecb3eeb20340716[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Sun Jun 9 18:47:34 2024 -0500
+
+    avance la segunda galeria en un 80% y seccion del video terminada
+
+[33mcommit b1fb0b93b394288da2bdc57d00acffaab8ab3a78[m
+Author: gercek1 <olcanchano@gmail.com>
+Date:   Sun Jun 9 16:43:09 2024 -0500
+
+    primera correcion de errores entre en header y main
+
+[33mcommit 82caa1b2436f7d6e34278e72a176585026b5b6f5[m
+Merge: 4cb3e6b f4002b3
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Sun Jun 9 16:15:49 2024 -0500
+
+    continuacion de la segunda galeria en un 50% y en la seccion del video se justifico de forma central
+
+[33mcommit 4cb3e6bcc8a077ffdee857e0d728b47516b28732[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Sun Jun 9 16:06:50 2024 -0500
+
+    continuacion de la segunda galeria en 50% y seccion del video en un 50%
+
+[33mcommit f4002b319b9b82ec13c63f21de5c96660920a453[m
+Author: gercek1 <olcanchano@gmail.com>
+Date:   Sun Jun 9 15:56:59 2024 -0500
+
+    Se termino el Nav a un 90% y se inicio la primera seccion
+
+[33mcommit f384fa2a88b4b6c2474432298294b5a7218b388a[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Sat Jun 8 19:36:31 2024 -0500
+
+    Inicio y base de la 2da galeria
+
+[33mcommit f3822d07fad9df62c72ca363387115a097107412[m
+Merge: 6d90dab d2075cd
+Author: JosephineValoyes <josevaco19@gmail.com>
+Date:   Fri Jun 7 18:40:13 2024 -0500
+
+    agrege link css y cambio de nombre de la pagina
+
+[33mcommit 6d90dabff765f7f568732e5dfb99c473b7b8d0c1[m
+Author: JosephineValoyes <josevaco19@gmail.com>
+Date:   Fri Jun 7 18:32:00 2024 -0500
+
+    cambio del idioma
+
+[33mcommit ece42aeaa669fe0eb4cc46081ee7989341b7349f[m
+Author: JosephineValoyes <josevaco19@gmail.com>
+Date:   Fri Jun 7 18:19:30 2024 -0500
+
+    cambio de idioma de la pagina
+
+[33mcommit d2075cd214486652ae10fc85bf29557196900614[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 7 18:09:33 2024 -0500
+
+    Descargue imagenes
+
+[33mcommit 00dc677073e8077a1afbc6d107c1eb759b8984d8[m
+Author: Angie Liceth <liceth5262@gmail.com>
+Date:   Fri Jun 7 17:34:26 2024 -0500
+
+    Creacion del proyecto
