@@ -8,8 +8,6 @@
   --color-secondary: #F5D38E;
   --color-tertiary: #fff;
   --color-paragraph: #9095A0;
-  --color-botones: #f5d38eff;
-  --color-aside:#171A1F4D;
   --tipography-titles: "Cormorant Garamond", serif;
   --tipography-text: "Manrope", sans-serif;
 }
@@ -341,7 +339,7 @@ div.desc h3 {
     
   }
 
-.vid video {
+  .vid video {
     width: 1176px;
     height:368px;
     border-radius: 8px;
@@ -349,14 +347,6 @@ div.desc h3 {
     
   }
   .ultima-seccion {
-=======
-.vid {
-    Width: 1176px;
-    height:368px;
-    border-radius: 8px;
-}
-.ultima-seccion {
->>>>>>> 69d7be3a93d5cdd06fcf76f224908134471d16b4
     background-color:var(--color-primary);
     padding: auto;  
     height: auto;
@@ -400,28 +390,27 @@ div.desc h3 {
     font-weight: 200;
     line-height: 30px;
     color: var(--color-tertiary);
-}
-figure img{ 
+  }
+  figure img{ 
     display:inline-flex;
     width: 200px;  
     height: 250px;
     flex-direction:row;
     margin-left: auto;
 
-}
-aside {    
+  }
+  aside {    
     background-color: #171A1F4D;
     display: flex;
     width: 600px;
     height: 255px;
     border-radius: 8px;
     position: relative;   
-    right:90px;
-    top: 38px;
+    left: 550px;
+    bottom: 100px;
     
-    
-}
-span {
+  }
+  span {
     display: flex;
     height: 50px;
     color: var(--color-tertiary);
@@ -429,10 +418,27 @@ span {
     line-height: 20px;
     font-weight: 600;
     font-size: 10px;
-    text-align:justify;
-    position: relative;
-    left: 10px;
-}
+  }
+  .text_foto button{
+    position:relative;
+    left:320px;
+    bottom:60px;
+    gap:1.25rem;
+  }
+  
+  .text_foto button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;    
+    border: none;  
+    
+  }
+  
+  .text_foto button:hover svg path {
+    stroke: var(--color-botones);
+    fill: var(--color-botones);
+     
+  }
 footer{ 
   background-color:var(--color-primary);
   font-family: var(--tipography-text);
@@ -444,21 +450,20 @@ footer{
   display:grid;
   grid-template-columns: repeat(4,1fr); 
   color: var(--color-tertiary);
-  text-decoration: none;
- }
+  text-decoration: none;  
+}
 .logo_{
   left: 50px;
   position: relative;
   top: 50px;
 }
 .logo_ {   
-    font-family: var(--tipography-titles);
+    font-family: Cormorant Garamond;
     font-size: 30px;
     font-weight: 400;
     line-height: 46px;
     text-align: left;
-    color: var(--color-secondary);
-    
+    color: #F5D38E;    
 }
 .lista_1 ul li{
   padding: 5px;
@@ -491,73 +496,79 @@ footer{
 .lista2 a {
   color: var(--color-tertiary);
   text-decoration: none;
- }
+  position: relative;
+  right: 280px; 
+  top: 50px;
+}
 
 .box{
-    display: flex;
+    display: grid;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 0px;
     margin-left: 10px;
     align-items: flex-start;
-   
+    position: relative;
+    right: 150px;
+    top: 70px;
+    font-family: var( --tipography-text);
+    
 }
-.div_3 p{
-    display: flex; 
+.div_3 p{  
     line-height: 20px; 
-    font-size: 10px;    
-    flex:0px;
-    margin-bottom: 10px;
+    font-size: 12px;    
+    color:var(--color-tertiary);
+    font-weight: 400;
 }
 form{
     display: flex;
     flex-direction:row-reverse;  
+    position: relative;
+    top: 10px;
 }
 input{
     background-color: var(--color-primary);
     border: solid 1px var(--color-tertiary);
-    width: 200px;
+    width: 230px;
     height: 30px;
-    top: 100px;
-    left: 924px;
     padding: 7px 132px 6px 12px;
     border-radius: 18px 0px 0px 18px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+    border: 1px 0px 0px 0px;     
     color: var(--color-tertiary);
     font-size: 10px;  
-                 
-}
+}   
+
 .boton_pie {
-    width: 150px;
+    width: 110px;
     background-color:var(--color-secondary);
     border-radius:  0px 50px 50px 0px ;
     border: none;
     
 }
-.red_social{
+.red_social {
   display: flex;
   text-decoration: none;
   color:#FFFFFF;
-  width: 45px;
-  height: 45px;
-  line-height: 45px; 
+  width: 55px;
+  height: 55px;
+  line-height: 65px;
 }
+ 
 .red{
     position: relative;
-    left: 200px;
-    padding: 8px 10px;
- }
+    left: 190px;
+    padding: 10px 10px;
+    top: 20px;
+}
+.red i{
+  font-size: 20px;
+}
 .derechos{
-    display: flex;
+    color: #FFFFFF;
     font-size: 10px;
-    align-items:center;
-    flex-direction: column;   
     position: relative;
     top: 45px; 
     left: 40px;  
 }
-@media screen and ( max-width:800px) {
+@media screen and ( min-width:600px) {
   footer{
     grid-template-columns: repeat(1,1fr);   
     width: 100%;
@@ -573,6 +584,7 @@ input{
     padding: 30px 0px;
  }
 }
+
 
 @media (max-width: 600px){
   .uno {
@@ -590,6 +602,19 @@ input{
   
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 850px){
+  .Galeria {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+}
+
+@media (max-width: 850px) {
+  .vid video { 
+    width: 588px;
+    height:182px;
+}
 
 }
