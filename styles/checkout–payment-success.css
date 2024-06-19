@@ -193,7 +193,17 @@ main {
   padding: 0 15px;
 }
 
+.smallTitle{
+  font-weight: 700;
+  font-size: 32px;
+  padding: 30px;
+  font-family: var(--tipography-titles);
+  text-align: center;
+}
 
+.item{
+  
+}
 
 footer {
   background-color: var(--color-primary);
