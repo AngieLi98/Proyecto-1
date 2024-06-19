@@ -1,125 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/product-listing.css" />
-    <script src="https://kit.fontawesome.com/2220251c57.js" crossorigin="anonymous"></script>
-    <title>Listado de Productos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/product-listing.css" />
+  <script src="https://kit.fontawesome.com/2220251c57.js" crossorigin="anonymous"></script>
+  <title>Listado de Productos</title>
 </head>
+
 <body>
-    <header>
-<<<<<<< HEAD
-      <nav class="nav">
-        <div class="logo">
-          <a class="header__logo" href="">Darling .</a>
-        </div>
-        <div class="Enlaces">
-          <a href="../index.html">Inicio</a>
-          <a href="./product-listing.html">Tienda</a>
-          <a href="#contact">Colecciones</a>
-          <a href="#services">Acerca de</a>
-          <a href="#contact">Contacto</a>
-          <a href="#user"><i class="fa-solid fa-user"></i></a>
-          <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-=======
-        <h2>Darling.</h2>
-      <nav class="nav">       
-        <a href="/Proyecto-1/index.html">Inicio</a>
-        <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a class="header__logo" href="">Darling .</a>
+      </div>
+      <div class="Enlaces">
+        <a href="../index.html">Inicio</a>
+        <a href="./product-listing.html">Tienda</a>
         <a href="#contact">Colecciones</a>
         <a href="#services">Acerca de</a>
         <a href="#contact">Contacto</a>
         <a href="#user"><i class="fa-solid fa-user"></i></a>
-        <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>         
->>>>>>> cdffad20d9523b82e007256a56e2f3bd61f4ea46
-      </nav>
-      <div>
-        
+        <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
-    </header>
+    </nav>
+    <div class="buscador">
+      <h2 class="titulo">Nuestros Productos</h2>
+      <input type="text" name="search" placeholder="Encuentra joyas que te gusten" class="src" autocomplete="off">
+    </div>
+  </header>
 
-    <main>
-      <section> <!-- seccion filtro-->
-
-      </section>
-      <section> <!-- galeria -->
-
-      </section>
-        <section class="uno"> <!-- ultima seccion-->
-            <div class="seccion-uno">
-              <img class="icono" src="../assets/img/01-entrega.svg" alt="">
-              <div>
-                <h3>Entrega</h3>
-                <p class="parrafo">Envíos a nivel nacional en el <br> menor tiempo posible</p>
-              </div>
-            </div>
-            <div class="seccion-uno">
-              <img class="icono" src="../assets/img/02-mensaje.svg" alt="">
-              <div>
-                <h3>Atención al cliente</h3>
-                <p class="parrafo">Conoce nuestros canales de atención con asesores expertos 
-                  <br> que harán que vivas experiencias inolvidable</p>
-              </div>
-            </div>
-            <div class="seccion-uno">
-              <img class="icono" src="../assets/img/03-seguridad.svg" alt="">
-              <div>
-                <h3>Seguridad de pago</h3>
-                <p class="parrafo">Garantizamos tu seguridad con <br> nuestrass políticas de privacidad</p>
-              </div>
-            </div>
-          </section>
-        </main>
-    <footer class="pies_de_pagina">  <!-- Pie de pagina-->
-      <div class="grupo1"> 
-        <div>
-            <h1 class="logo_">Darling</h1> <!-- logo-->        
-        </div>        
-        <div class="lista_1">  <!-- primera lista de enlaces del footer -->
-            <ul> 
-              <li> 
-                <a href="##">Acerca de</a>
-                <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
-                <a href="##">Colecciones</a>
-              </li>  
-            </ul>   
-         </div>
-         <div class="lista2">   <!-- segunda lista de enlaces del footer -->
-           <ul>  
-              <li>
-                  <a href="##">Tèrminos</a>
-                  <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>     
-                  <a href="##">Contacto</a>  
-              </li>
-           </ul>   
-         </div>                              
-         <div class="box">   <!-- suscribete footer-->
-            <div class="div_3">   
-              <p>Suscríbete a nuestro boletín</p>
-              <p>Para anuncios de productos e información exclusiva</p>
-         </div>        
-         <div class="form_footer">
-           <form action="">
-              <button  class="boton_pie" type="submit">Suscribirse</button>
-              <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="">                 
-           </form>
-         </div>
-           <!-- Redes Sociales-->
-         <div class="red_social"> 
-            <span class="red"><i class="fa-brands fa-twitter"></i></span>
-            <span class="red"><i class="fa-brands fa-facebook"></i></span>
-            <span class="red"><i class="fa-brands fa-linkedin"></i></span>
-            <span class="red"><i class="fa-brands fa-youtube"></i></span>
-         </div>          
+  <main>
+    <section> <!-- seccion filtro-->
+      <div class="filtros">
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('todo')"> Todo</button>
+          <button class="btn" onclick="filterSelection('anillos')"> Anillos</button>
+          <button class="btn" onclick="filterSelection('brazaletes')"> Brazaletes</button>
+          <button class="btn" onclick="filterSelection('collares')"> Collares</button>
+          <button class="btn" onclick="filterSelection('pendientes')"> Pendientes</button>
         </div>
-      </div>      
-        <!-- derechos de autor -->  
-     <div class="derechos">
-        <small> © 2022 Brand, Inc. </small>             
-     </div>           
-     
-    </footer>  
+        <div class="lista-despegable">
+          <select name="" id="despegable">
+            <option value="">Ordenar por precio</option>
+            <option value="">Ordenar por</option>
+            <option value="">Ordenar por</option>
+          </select>
+        </div>
+      </div>
+      <div class="coleccion">
+        <article class="card collares">
+          <figure>
+            <img src="../assets/img/pl-imag-1.jpeg" alt="Collar de gemas de lujo">
+          </figure>
+          <div>
+            <h3>Collar de gemas de lujo</h3>
+            <p>$168.76</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-2.jpeg" alt="Anillo Aurora">
+          </figure>
+          <div>
+            <h3>Anillo Aurora</h3>
+            <p>$125.28</p>
+          </div>
+        </article>
+        <article class="card collares">
+          <figure>
+            <img src="../assets/img/pl-imag-3.jpeg" alt="Collar Reflejos">
+          </figure>
+          <div>
+            <h3>Collar Reflejos</h3>
+            <p>$620.73</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-4.jpeg" alt="Anillo infinito de ensueño">
+          </figure>
+          <div>
+            <h3>Anillo infinito de ensueño</h3>
+            <p>$327.71</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-5.jpeg" alt="Anillo de joyas opulentas">
+          </figure>
+          <div>
+            <h3>Anillo de joyas opulentas</h3>
+            <p>$168.76</p>
+          </div>
+        </article>
+        <article class="card pendientes">
+          <figure>
+            <img src="../assets/img/pl-imag-6.jpeg" alt="Pendientes Solitario Sereno">
+          </figure>
+          <div>
+            <h3>Pendientes Solitario Sereno</h3>
+            <p>$125.28</p>
+          </div>
+        </article>
+        <article class="card pendientes">
+          <figure>
+            <img src="../assets/img/pl-imag-7.jpeg" alt="Pendientes de halo atemporales">
+          </figure>
+          <div>
+            <h3>Pendientes de halo atemporales</h3>
+            <p>$620.73</p>
+          </div>
+        </article>
+        <article class="card pendientes">
+          <figure>
+            <img src="../assets/img/pl-imag-8.jpeg" alt="Pendientes exquisitos">
+          </figure>
+          <div>
+            <h3>Pendientes exquisitos</h3>
+            <p>$327.71</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-9.jpeg" alt="Anillo de elegancia atemporal">
+          </figure>
+          <div>
+            <h3>Anillo de elegancia atemporal</h3>
+            <p>$168.76</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-10.jpeg" alt="Anillo de encantos de lujo">
+          </figure>
+          <div>
+            <h3>Anillo de encantos de lujo</h3>
+            <p>$620.73</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-11.jpeg" alt="Anillo de floración dichosa">
+          </figure>
+          <div>
+            <h3>Anillo de floración dichosa</h3>
+            <p>$620.73</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-12.jpeg" alt="Anillo chispeante">
+          </figure>
+          <div>
+            <h3>Anillo chispeante</h3>
+            <p>$620.73</p>
+          </div>
+        </article>
+        <article class="card anillos">
+          <figure>
+            <img src="../assets/img/pl-imag-13.jpeg" alt="Anillo reluciente">
+          </figure>
+          <div>
+            <h3>Anillo reluciente</h3>
+            <p>$620.73</p>
+          </div>
+        </article>
+      </div>
+      <div class="pagination">
+        <a href="#"><i class="arrow left"></i></a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">...</a>
+        <!--<a href="#">4</a> 
+        <a href="#">5</a>
+        <a href="#">6</a> 
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a> -->
+        <a href="#">10</a>
+        <a href="#"><i class="arrow right"></i></a>
+      </div>
+    </section>
+    <section class="uno"> <!-- ultima seccion-->
+      <div class="seccion-uno">
+        <img class="icono" src="../assets/img/01-entrega.svg" alt="">
+        <div>
+          <h3>Entrega</h3>
+          <p class="parrafo">Envíos a nivel nacional en el <br> menor tiempo posible</p>
+        </div>
+      </div>
+      <div class="seccion-uno">
+        <img class="icono" src="../assets/img/02-mensaje.svg" alt="">
+        <div>
+          <h3>Atención al cliente</h3>
+          <p class="parrafo">Conoce nuestros canales de atención con asesores expertos
+            <br> que harán que vivas experiencias inolvidable
+          </p>
+        </div>
+      </div>
+      <div class="seccion-uno">
+        <img class="icono" src="../assets/img/03-seguridad.svg" alt="">
+        <div>
+          <h3>Seguridad de pago</h3>
+          <p class="parrafo">Garantizamos tu seguridad con <br> nuestrass políticas de privacidad</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="pies_de_pagina"> <!-- Pie de pagina-->
+    <div class="grupo1">
+      <div>
+        <h1 class="logo_">Darling</h1> <!-- logo-->
+      </div>
+      <div class="lista_1"> <!-- primera lista de enlaces del footer -->
+        <ul>
+          <li>
+            <a href="##">Acerca de</a>
+            <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
+            <a href="##">Colecciones</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lista2"> <!-- segunda lista de enlaces del footer -->
+        <ul>
+          <li>
+            <a href="##">Tèrminos</a>
+            <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>
+            <a href="##">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="box"> <!-- suscribete footer-->
+        <div class="div_3">
+          <p>Suscríbete a nuestro boletín</p>
+          <p>Para anuncios de productos e información exclusiva</p>
+        </div>
+        <div class="form_footer">
+          <form action="">
+            <button class="boton_pie" type="submit">Suscribirse</button>
+            <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="">
+          </form>
+        </div>
+        <!-- Redes Sociales-->
+        <div class="red_social">
+          <span class="red"><i class="fa-brands fa-twitter"></i></span>
+          <span class="red"><i class="fa-brands fa-facebook"></i></span>
+          <span class="red"><i class="fa-brands fa-linkedin"></i></span>
+          <span class="red"><i class="fa-brands fa-youtube"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- derechos de autor -->
+    <div class="derechos">
+      <small> © 2022 Brand, Inc. </small>
+    </div>
+
+  </footer>
 </body>
+
 </html>
