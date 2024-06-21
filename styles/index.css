@@ -22,6 +22,7 @@
 header {
   background-color: var(--color-primary);
   height: 821px;
+  min-width: 500px;
 }
 
 .nav {
@@ -125,7 +126,7 @@ section .img2Header img {
 h2 {
   font-family:var(--tipography-titles);
   font-size: 40px;
-  color: #0D554A;
+  color: var(--color-primary);
 
 }
 
