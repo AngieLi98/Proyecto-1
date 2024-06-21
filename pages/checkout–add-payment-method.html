@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Proyecto-1/styles/checkout–add-payment-method.css" />
-    <script src="https://kit.fontawesome.com/2220251c57.js" crossorigin="anonymous"></script>
-    <title>Listado de Productos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Proyecto-1/styles/checkout–add-payment-method.css" />
+  <script src="https://kit.fontawesome.com/2220251c57.js" crossorigin="anonymous"></script>
+  <title>Listado de Productos</title>
 </head>
+
 <body>
   <header>
     <nav class="nav">
@@ -26,193 +28,209 @@
     <hr>
   </header>
   <main>
-      <section class="productos-agregados">
-        <div><h2>Resumen del pedido</h2></div>
-        <div class="fotos-escogidas"> 
-         <div class="filas">
-           <article>
+    <section class="productos-agregados">
+      <div>
+        <h2>Resumen del pedido</h2>
+      </div>
+      <div class="fotos-escogidas">
+        <div class="filas">
+          <article>
             <figure class="escogida1">
               <img src="/Proyecto-1/assets/img/img-11.jpeg" alt="Anillo de encantos de lujo">
             </figure>
-           </article>
-           <div class="texto-codigo1">
+          </article>
+          <div class="texto-codigo1">
             <p>Anillo de encantos de lujo</p>
             <span>code: 78205</span>
-           </div>
-           <div class="valor-1"><span>620.73</span></div>
-           <span class="bote"><i class="fa-light fa-trash-can" style="color: #0d0c0c;"></i></span>
-         </div>
-         <div class="filas">
+          </div>
+          <div class="valor-1"><span>620.73</span></div>
+          <span class="bote"><i class="fa-light fa-trash-can"></i></span>
+        </div>
+        <div class="filas">
           <article>
             <figure class="escogida2">
               <img src="/Proyecto-1/assets/img/img-2.jpeg" alt="Pendientes exquisitos">
             </figure>
-           </article>
-           <div class="texto-codigo1">
+          </article>
+          <div class="texto-codigo1">
             <p>Pendientes exquisitos</p>
             <span>code: 92701</span>
-           </div>
-           <div class="valor-1"><span>125.28</span></div>
-           <span class="bote"><i class="fa-light fa-trash-can" style="color: #0d0c0c;"></i></span>
-         </div>
-         <div class="filas">
+          </div>
+          <div class="valor-1"><span>125.28</span></div>
+          <span class="bote"><i class="fa-light fa-trash-can"></i></span>
+        </div>
+        <div class="filas">
           <article>
             <figure class="escogida3">
               <img src="/Proyecto-1/assets/img/img-4.jpeg" alt="Pendientes Delicias">
             </figure>
-           </article>          
-          </div>
+          </article>
           <div class="texto-codigo1">
             <p>Pendientes Delicias</p>
             <span>code: 78201</span>
-           </div>
-           <div class="valor-1"><span>327.71</span></div>
-           <span class="bote"><i class="fa-light fa-trash-can" style="color: #0d0c0c;"></i> </span> 
+          </div>
+          <div class="valor-1"><span>327.71</span></div>
+          <span class="bote"><i class="fa-light fa-trash-can"></i> </span>
         </div>
-      </section>
-      <section class="metodos-de-pago">
-        <div class="metodo">
-          <h2>
-            Método de pago
-          </h2>
-          <span>Cambiar métodos de pago</span>
+      </div>
+    </section>
+    <section class="metodos-de-pago">
+      <div class="metodo">
+        <h2>
+          Método de pago
+        </h2>
+        <span>Cambiar métodos de pago</span>
+      </div>
+      <div class="pago-tarjeta">
+        <form action="">
+          <input type="text" name="mastercard" id="">
+        </form>
+        <figure>
+          <img src="/Proyecto-1/assets/img/master card.png" alt="mastercard">
+        </figure>
+        <p>Mastercard</p> <span>**** 5987</span>
+      </div>
+      <div class="ingresos-de-valores">
+        <h4>Vale</h4>
+        <form action="">
+          <input type="text" name="precio" id="">
+        </form>
+        <span>$15 OFF</span>
+        <button type="submit">Aplicar</button>
+        <div class="subprecio1">
+          <span class="subprecio">$15 off</span>
         </div>
-        <div class="pago-tarjeta">
-          <form action="">            
-             <input type="text" name="mastercard" id="">
-          </form>
-          <article>
-            <figure>
-              <img src="/Proyecto-1/assets/img/master card.png" alt="mastercard">
-            </figure>
-          </article>
+
+      </div>
+      <div class="total-de-productos">
+        <h3>Resumen</h3>
+        <span class="valores">Subtotal <small>$1073.72</small></span>
+        <span class="valores">Descuento <small>-$15</small></span>
+        <span class="valores">Tarifa <small>$0</small></span>
+        <hr>
+        <span class="valores-total">total <small>$1058.72</small></span>
+      </div>
+      <div class="boton-finalizar-pago">
+        <button type="submit">Proceder al pago</button>
+      </div>
+    </section>
+    <section class="Galeria" id="fondo"> <!-- galeria en cards-->
+      <div class="text--">
+        <h2>También te puede interesar</h2>
+        <span>Ver más</span>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <figure>
+            <img src="../assets/img/imagen19.jpg" alt="Piedra brillante">
+          </figure>
+          <div class="desc">
+            <h3>Piedra brillante</h3>
+            <p>$168.76</p>
+          </div>
         </div>
-        <div class="ingresos-de-valores">
-          <h4>Vale</h4>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <figure>
+            <img src="../assets/img/img-12.jpeg" alt="Pendientes exquisitos">
+          </figure>
+          <div class="desc">
+            <h3>Pendientes exquisitos</h3>
+            <p>$125.28</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <figure>
+            <img src="../assets/img/img-13.jpeg" alt="Anillo Brillante">
+          </figure>
+          <div class="desc">
+            <h3>Anillo Brillante</h3>
+            <p>168.76</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <figure>
+            <img src="../assets/img/img-14.jpeg" alt="Broche de dijes de lujo">
+          </figure>
+          <div class="desc">
+            <h3>Broche de dijes de lujo</h3>
+            <p>$327.71</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <figure>
+            <img src="../assets/img/imagen18.jpg" alt="Broche de dijes de lujo">
+          </figure>
+          <div class="desc">
+            <h3>Broche de dijes de lujo</h3>
+            <p>$327.71</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      </div>
+    </section> <!-- galeria en cards-->
+    <hr>
+  </main>
+  <footer class="pies_de_pagina"> <!-- Pie de pagina-->
+    <div class="grupo1">
+      <div>
+        <h1 class="logo_">Darling</h1> <!-- logo-->
+      </div>
+      <div class="lista_1"> <!-- primera lista de enlaces del footer -->
+        <ul>
+          <li>
+            <a href="##">Acerca de</a>
+            <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
+            <a href="##">Colecciones</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lista2"> <!-- segunda lista de enlaces del footer -->
+        <ul>
+          <li>
+            <a href="##">Tèrminos</a>
+            <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>
+            <a href="##">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="box"> <!-- suscribete footer-->
+        <div class="div_3">
+          <p>Suscríbete a nuestro boletín</p>
+          <p>Para anuncios de productos e información exclusiva</p>
+        </div>
+        <div class="form_footer">
           <form action="">
-            <input type="text" name="precio" id="">
+            <button class="boton_pie" type="submit">Suscribirse</button>
+            <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="">
           </form>
-          <button type="submit">Aplicar</button>
-          <span>$15 Off</span>
         </div>
-        <div class="total-de-productos">
-          <h3>Resumen</h3>
-          <span class="valores">Subtotal <small>$1073.72</small></span>
-          <span class="valores">Descuento <small>-$15</small></span>
-          <span class="valores">Tarifa <small>$0</small></span>
-          <span class="valores-total">total <small>$1058.72</small></span>
+        <!-- Redes Sociales-->
+        <div class="red_social">
+          <span class="red"><i class="fa-brands fa-twitter"></i></span>
+          <span class="red"><i class="fa-brands fa-facebook"></i></span>
+          <span class="red"><i class="fa-brands fa-linkedin"></i></span>
+          <span class="red"><i class="fa-brands fa-youtube"></i></span>
         </div>
-        <div class="boton-finalizar-pago">
-          <button type="submit">Proceder al pago</button>
-        </div>
-      </section>
-     <section class="Galeria" id="fondo"> <!-- 3ra galeria en cards-->
-          <div class="cards1" >
-            <h2>Nuestra selección de joyas</h2><br>
-            <p class="parrafo">Nadie puede criticar el deseo del gran deportista de llegar a alguna parte</p>
-            <button class="button button1" type="submit">Compra ahora</button>
-          </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Proyecto-1/assets/img/img-1.jpeg">
-                <img src="/Proyecto-1/assets/img/img-11.jpeg" alt="Anillo brillante">
-              </a>
-              <div class="desc">
-                <h3>Anillo brillante</h3>
-                <p>$168.76</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Proyecto-1/assets/img/img-2.jpeg">
-                <img src="/Proyecto-1/assets/img/img-12.jpeg" alt="Pendientes exquisitos">
-              </a>
-              <div class="desc">
-                <h3>Pendientes Exquisitos</h3>
-                <p>$125.28</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Proyecto-1/assets/img/img-3.jpeg">
-                <img src="/Proyecto-1/assets/img/img-13.jpeg" alt="pendientes Elegancia">
-              </a>
-              <div class="desc">
-                <h3>Pendientes Elegancia</h3>
-                <p>$620.73</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="/Proyecto-1/assets/img/img-4.jpeg">
-                <img src="/Proyecto-1/assets/img/img-14.jpeg" alt="Broche de dijes de lujo">
-              </a>
-              <div class="desc">
-                <h3>Broche de dijes de lujo</h3>
-                <p>$327.71</p>
-              </div>
-            </div>
-          </div>
-        <div class="clearfix"></div> 
-        
-        </section> <!-- 3ra galeria en cards-->
-      <hr>
-    </main>
-                
-    <footer class="pies_de_pagina">  <!-- Pie de pagina-->
-      <div class="grupo1"> 
-        <div>
-            <h1 class="logo_">Darling</h1> <!-- logo-->        
-        </div>        
-        <div class="lista_1">  <!-- primera lista de enlaces del footer -->
-            <ul> 
-              <li> 
-                <a href="##">Acerca de</a>
-                <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
-                <a href="##">Colecciones</a>
-              </li>  
-            </ul>   
-         </div>
-         <div class="lista2">   <!-- segunda lista de enlaces del footer -->
-           <ul>  
-              <li>
-                  <a href="##">Tèrminos</a>
-                  <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>     
-                  <a href="##">Contacto</a>  
-              </li>
-           </ul>   
-         </div>                              
-         <div class="box">   <!-- suscribete footer-->
-            <div class="div_3">   
-              <p>Suscríbete a nuestro boletín</p>
-              <p>Para anuncios de productos e información exclusiva</p>
-         </div>        
-         <div class="form_footer">
-           <form action="">
-              <button  class="boton_pie" type="submit">Suscribirse</button>
-              <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="">                 
-           </form>
-         </div>
-           <!-- Redes Sociales-->
-         <div class="red_social"> 
-            <span class="red"><i class="fa-brands fa-twitter"></i></span>
-            <span class="red"><i class="fa-brands fa-facebook"></i></span>
-            <span class="red"><i class="fa-brands fa-linkedin"></i></span>
-            <span class="red"><i class="fa-brands fa-youtube"></i></span>
-         </div>          
-        </div>
-      </div>      
-        <!-- derechos de autor -->  
-     <div class="derechos">
-        <small> © 2022 Brand, Inc. </small>             
-     </div>           
-     
-    </footer>  
+      </div>
+    </div>
+    <!-- derechos de autor -->
+    <div class="derechos">
+      <small> © 2022 Brand, Inc. </small>
+    </div>
+
+  </footer>
 </body>
+
 </html>
