@@ -194,15 +194,45 @@ main {
   padding: 0 15px;
 }
 
+.order-list {
+  width: 100%;
+}
+
 .smallTitle {
   font-weight: 700;
   font-size: 32px;
-  padding: 30px;
   font-family: var(--tipography-titles);
-  text-align: center;
+  text-align: left;
+}
+
+
+
+.order-list__card {
+  width: 100%;
+  height: 148px;
+  overflow-y: auto;
+}
+
+.order-list__card ::-webkit-scrollbar-thumb {
+  background: rgba(188, 193, 202, 1);
+  width: 4px;
+height: 132px;
+border-radius: 2px 0px 0px 0px;
+
+}
+
+.item {
+  display: flex;
+  width: 512px;
+  height: 94px;
+  margin: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  align-items: center;
 }
 
 .item img {
+  object-fit: cover;
   float: left;
   width: 120px;
   height: 120px;
@@ -211,6 +241,16 @@ main {
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
 
+}
+
+.item h3 {
+  font-family: Cormorant Garamond;
+  /* Heading */
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #323842FF;
+  /* neutral-700 */
 }
 
 footer {

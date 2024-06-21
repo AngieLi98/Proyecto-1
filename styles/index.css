@@ -568,7 +568,7 @@ input{
     left:40px; 
 }
 
-@media (max-width: 600px){
+@media (max-width: 850px){
   .uno {
     flex-direction: column;
   }
@@ -608,10 +608,10 @@ input{
 }
 
 @media (max-width: 850px) {
-  .vid  { 
-    object-fit: cover;
+  .vid video { 
+    width: 588px;
+    height:182px;
 }
-
 }
 
 @media screen and ( max-width:800px) {
@@ -634,3 +634,11 @@ input{
 
 
 }
+
+@media (max-width: 600px) {
+  .vid video { 
+    width: 441px;
+    height: 136.5px;
+}
+}
+
