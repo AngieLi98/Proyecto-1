@@ -25,6 +25,13 @@ header {
   min-width: 500px;
 }
 
+header .nav .Enlaces .header__menu {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+}
+
 .nav {
   background-color: var(--color-primary);
   display: flex;
@@ -583,6 +590,20 @@ input{
     justify-content: center;
 
   }
+
+  .header__menu {
+    display: block;
+  }
+
+  .Enlaces {
+    display: none;
+  }
+
+
+
+
+
+
   
 }
 
@@ -608,4 +629,8 @@ input{
     gap: 30px;
     padding: 30px 0px;
  }
+
+
+
+
 }
