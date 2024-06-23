@@ -36,6 +36,7 @@ header .nav .Enlaces .header__menu {
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 132px;
   
 }

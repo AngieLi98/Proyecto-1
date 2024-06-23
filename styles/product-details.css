@@ -59,7 +59,7 @@ header .nav .header__logo {
   text-underline-offset: 14px;
 }
 
-main ul{
+main .encabezados{
   list-style: none;
   display: flex;
   padding-left: 132px;
