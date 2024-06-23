@@ -231,7 +231,7 @@ main .descripcion{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 100px 30px 100px;
+  padding: 0px 140px 30px 140px;
 
 }
 
@@ -314,7 +314,7 @@ main .descripcion .anillo .encanto-atemporal .video{
 .Galeria {
   display: flex;
   flex-direction: row;
-  padding: 10px 0px 60px 180px;
+  padding: 10px 0px 60px 140px;
   overflow: hidden;
   align-items: center;
   
@@ -326,7 +326,7 @@ main .galeriaH2{
   font-weight: 600;
   line-height: 56px;
   font-size: 40px;
-  padding-left: 180px;
+  padding-left: 140px;
 }
 div.gallery {
   border: 1px solid #ccc;
