@@ -3,65 +3,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
+:root{
+  --color-primary: #093931;
+  --color-secondary: #F5D38E;
+  --color-tertiary: #fff;
+  --color-paragraph: #9095A0;
+  --tipography-titles: "Cormorant Garamond", serif;
+  --tipography-text: "Manrope", sans-serif;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Manrope", sans-serif;
-    font-family: "Cormorant Garamond", serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-header{
-  background-color: #093931;
+header {
+  background-color: var(--color-primary);
   height: 450px;
+}
+
+.nav {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 132px;
   
 }
 
-.nav{
-    display: flex;
-    justify-content: right;
-    margin-right: 60px;
-  }
+header .nav .header__logo {
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 400;
+  color: var(--color-secondary); 
+  font-family: var(--tipography-titles);
+}
+
+.nav .Enlaces a{
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: var(--tipography-text);
+  white-space: nowrap;   
+}
+
+.nav a:hover {
+  background-color: none;
+  color: var(--color-secondary);
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 14px;
+}
+
+.buscador {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.titulo {
+  font-size: 62px;
+  color: var(--color-secondary); 
+  font-family: var(--tipography-titles);
+  text-align: center;
+  padding-bottom: 25px;
+
+}
+
+input.src {
+  padding: 9px 10px 9px 38px ;
+  outline: none;
+  font-size: 18px;
+  border-radius: 26px;
+  color: #323842;
+  background: var(--color-tertiary) url("../assets/img/search_24dp_FILL0_wght400_GRAD0_opsz24.svg") no-repeat 9px center;
+  width: 751px;
+  height: 51px;
+  font-family: var(--tipography-text);
+
+}
+
+.filtros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 60.8px;
   
-  .nav a{
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: sans-serif;
-    white-space: nowrap;   
-  }
-  
-  .nav a:hover {
-    background-color: none;
-    color: #F5D38E;
-    border: 2px solid #F5D38E;
-    border-radius: 25px;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  
-  header h2{
-    font-size: 30px;
-    width: 350px;
-    line-height: 46px;
-    font-weight: 100;
-    color: #F5D38E; 
-    float: left;
-    text-align: center;
-    font-family: Manrope;
-  }
-  
-  .uno {
+}
+
+.btn {
+  border: none;
+  outline: none;
+  width: 148.6px;
+  height: 38px;
+  border-radius: 19px;
+  padding: 12px 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-tertiary);
+}
+
+.btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+select {
+  outline: none;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid var(--color-paragraph);
+  color: #171A1F;
+  background: var(--color-tertiary);
+  width: 144px;
+  height: 36px;
+  font-family: var(--tipography-text);
+   
+}
+
+
+.coleccion {
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.4rem, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  aspect-ratio: 276/404;
+}
+
+.card:hover {
+  border: 1px solid #777;
+}
+
+.card figure {
+  width: 100%;
+  aspect-ratio: 276/320;
+}
+
+.card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.card div h3 {
+  font-family: var(--tipography-titles);
+  font-size: 1.25rem;
+}
+
+.card div p {
+  font-family: var(--tipography-text);
+}
+
+.card div {
+  padding: 0.75em 0.75em 0.75em 0.75em;
+}
+
+.arrow {
+  border: solid var(--color-paragraph);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.uno {
     display: flex;
     flex-direction: row;
     justify-content: center;
     
   }
   
-  .seccion-uno {
+.seccion-uno {
     text-align: center;
     margin: 50px;
   }
@@ -71,22 +212,34 @@ header{
     height: 62px;
 }
 
+.pagination {
+  display: inline-block;  
+  font-family: var(--tipography-text);
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 
+}
 
+.pagination a {
+  color: var(--color-paragraph);
+  float: left;
+  padding: 9px 17px;
+  text-decoration: none;
+}
 
+.pagination a.active {
+  background-color: var(--color-tertiary);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  padding: 8px 14px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 50%;
+}
 
 footer{ 
   background-color:var(--color-primary);
@@ -218,4 +371,40 @@ input{
     position: relative;
     top: 45px; 
     left:40px; 
+}
+
+
+@media (min-width: 600px) {
+  .card:nth-child(9) {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+
+  .card:nth-child(9) figure {
+    aspect-ratio: 576/734;
+  }
+  .card:nth-child(9) h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-witdth: 1025px) {
+  .coleccion {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 850px){
+  .uno {
+    flex-direction: column;
+  }
+  
+}
+
+@media (max-width: 850px){
+  input.src {
+    width: 350px;
+    
+  }
+  
 }

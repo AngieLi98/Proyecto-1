@@ -1,77 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/checkout–payment-success.css" />
-    <script src="https://kit.fontawesome.com/2220251c57.js" crossorigin="anonymous"></script>
-    <title>Listado de Productos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/checkout–payment-success.css" />
+  <script src="https://kit.fontawesome.com/2220251c57.js" crossorigin="anonymous"></script>
+  <title>Listado de Productos</title>
 </head>
+
 <body>
-    <header>
-        <h2>Darling.</h2>
-      <nav class="nav">       
-        <a href="../index.html">Inicio</a>
-        <a href="../pages/product-listing.html">Tienda</a>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <a class="header__logo" href="">Darling .</a>
+      </div>
+      <div class="Enlaces">
+        <a href="/Proyecto-1/index.html">Inicio</a>
+        <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
         <a href="#contact">Colecciones</a>
         <a href="#services">Acerca de</a>
         <a href="#contact">Contacto</a>
         <a href="#user"><i class="fa-solid fa-user"></i></a>
-        <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>         
-      </nav>
-    </header>
-    <main>
+        <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="encabezado">
+      <div class="logo-compra">
+        <figure class="empaque">
+          <img src="../assets/img/Empaque.jpg" alt="" />
+        </figure>
+        <h2 class="compra">Muchas gracias por su compra</h2>
+        <h3 class="recibido">Recibirás una carta de confirmación a través de tu correo electrónico</h3>
+      </div>
+    </section>
+    <section class="infocompra">
 
-    </main>
-    <footer class="pies_de_pagina">  <!-- Pie de pagina-->
-      <div class="grupo1"> 
-        <div>
-            <h1 class="logo_">Darling</h1> <!-- logo-->        
-        </div>        
-        <div class="lista_1">  <!-- primera lista de enlaces del footer -->
-            <ul> 
-              <li> 
-                <a href="##">Acerca de</a>
-                <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
-                <a href="##">Colecciones</a>
-              </li>  
-            </ul>   
-         </div>
-         <div class="lista2">   <!-- segunda lista de enlaces del footer -->
-           <ul>  
-              <li>
-                  <a href="##">Tèrminos</a>
-                  <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>     
-                  <a href="##">Contacto</a>  
-              </li>
-           </ul>   
-         </div>                              
-         <div class="box">   <!-- suscribete footer-->
-            <div class="div_3">   
-              <p>Suscríbete a nuestro boletín</p>
-              <p>Para anuncios de productos e información exclusiva</p>
-         </div>        
-         <div class="form_footer">
-           <form action="">
-              <button  class="boton_pie" type="submit">Suscribirse</button>
-              <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="">                 
-           </form>
-         </div>
-           <!-- Redes Sociales-->
-         <div class="red_social"> 
-            <span class="red"><i class="fa-brands fa-twitter"></i></span>
-            <span class="red"><i class="fa-brands fa-facebook"></i></span>
-            <span class="red"><i class="fa-brands fa-linkedin"></i></span>
-            <span class="red"><i class="fa-brands fa-youtube"></i></span>
-         </div>          
+      <div class="detalles">
+        <fieldset class="detalles__wrap">
+
+          <div class="detalles__item">
+            <div class="detalles__item__left">
+              <figure class="detalles__icon">
+                <img src="../assets/img/Calendar date 1calendario.svg" alt="" />
+              </figure>
+              <p class="detalles__text">Fecha</p>
+            </div>
+            <div class="detalles__icon__right">
+              <p class="detalles__text">27/04/2022</p>
+            </div>
+          </div>
+
+          <div class="detalles__item">
+            <div class="detalles__item__left">
+              <figure class="detalles__icon">
+                <img src="../assets/img/Profile 8.svg" alt="" />
+              </figure>
+              <p class="detalles__text">Usuario</p>
+            </div>
+            <div class="detalles__icon__right">
+              <p class="detalles__text">jhon Miller</p>
+            </div>
+          </div>
+
+
+          <div class="detalles__item">
+            <div class="detalles__item__left">
+              <figure class="detalles__icon">
+                <img src="../assets/img/Money 13 1.svg" alt="" />
+              </figure>
+              <p class="detalles__text">Metodo de pago</p>
+            </div>
+            <div class="detalles__icon__left">
+              <img src="../assets/img/Image 8.png" alt="" />
+            </div>
+          </div>
+
+
+          <hr class="detalles__divisor">
+
+
+          <div class="detalles__item">
+            <div class="detalles__item__left">
+              <figure class="detalles__icon">
+                <img src="../assets/img/Receipt list 43 1.svg" alt="" />
+              </figure>
+              <p class="detalles__text">Numero de orden</p>
+            </div>
+            <div class="detalles__icon__right">
+              <p class="detalles__text">586789963</p>
+            </div>
+          </div>
+
+
+          <div class="detalles__item">
+            <div class="detalles__item__left">
+              <figure class="detalles__icon">
+                <img src="../assets/img/Currency dollar 1.svg" alt="" />
+              </figure>
+              <p class="detalles__text">Total</p>
+            </div>
+            <div class="detalles__icon__right">
+              <p class="detalles__text">$1058.72</p>
+            </div>
+          </div>
+
+
+          <hr class="detalles__divisor">
+
+
+          <section class="order-list">
+            <h3 class="smallTitle">Linea de orden</h3>
+              <article class="order-list__card">
+                <div class="item">
+                  <img src="../assets/img/img-11.jpeg" alt="" />
+                  <div>
+                    <h3>Anillo de encantos de lujo</h3>
+                    <p class="detalles__text">78205</p>
+                    <p class="detalles__text">x1</p>
+                  </div>
+                  <div class="detalles__icon__right">
+                    <p class="detalle__text">$620.73</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="../assets/img/img-2.jpeg" alt="" />
+                  <div>
+                    <h3>Pendientes exquisitos</h3>
+                    <p class="detalles__text">92701</p>
+                    <p class="detalles__text">x1</p>
+                  </div>
+                  <div class="detalles__icon__right">
+                    <p class="detalle__text">$125.28</p>
+                  </div>
+            </div>
+            <div class="item">
+              <img src="../assets/img/img-2.jpeg" alt="" />
+              <div>
+                <h3>Pendientes exquisitos</h3>
+                <p class="detalles__text">92701</p>
+                <p class="detalles__text">x1</p>
+              </div>
+              <div class="detalles__icon__right">
+                <p class="detalle__text">$125.28</p>
+              </div>
         </div>
-      </div>      
-        <!-- derechos de autor -->  
-     <div class="derechos">
-        <small> © 2022 Brand, Inc. </small>             
-     </div>           
-     
-    </footer>  
-    
+
+      </div>
+      </article>
+    </section>
+
+    </fieldset>
+
+    </div>
+    </section>
+  </main>
+  <footer class="pies_de_pagina">
+    <!-- Pie de pagina-->
+    <div class="grupo1">
+      <div>
+        <h1 class="logo_">Darling</h1>
+        <!-- logo-->
+      </div>
+      <div class="lista_1">
+        <!-- primera lista de enlaces del footer -->
+        <ul>
+          <li>
+            <a href="##">Acerca de</a>
+            <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
+            <a href="##">Colecciones</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lista2">
+        <!-- segunda lista de enlaces del footer -->
+        <ul>
+          <li>
+            <a href="##">Tèrminos</a>
+            <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>
+            <a href="##">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <!-- suscribete footer-->
+        <div class="div_3">
+          <p>Suscríbete a nuestro boletín</p>
+          <p>Para anuncios de productos e información exclusiva</p>
+        </div>
+        <div class="form_footer">
+          <form action="">
+            <button class="boton_pie" type="submit">Suscribirse</button>
+            <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="" />
+          </form>
+        </div>
+        <!-- Redes Sociales-->
+        <div class="red_social">
+          <span class="red"><i class="fa-brands fa-twitter"></i></span>
+          <span class="red"><i class="fa-brands fa-facebook"></i></span>
+          <span class="red"><i class="fa-brands fa-linkedin"></i></span>
+          <span class="red"><i class="fa-brands fa-youtube"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- derechos de autor -->
+    <div class="derechos">
+      <small> © 2022 Brand, Inc. </small>
+    </div>
+        
+  </footer>
+
 </body>
+
 </html>
