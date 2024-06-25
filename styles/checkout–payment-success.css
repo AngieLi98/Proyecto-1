@@ -214,11 +214,11 @@ main {
   overflow-y: auto;
 }
 
-.order-list__card ::-webkit-scrollbar-thumb {
+.order-list__card :-webkit-scrollbar-thumb {
   background: rgba(188, 193, 202, 1);
   width: 4px;
-height: 132px;
-border-radius: 2px 0px 0px 0px;
+  height: 132px;
+  border-radius: 2px 0px 0px 0px;
 
 }
 
