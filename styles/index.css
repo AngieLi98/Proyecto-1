@@ -337,104 +337,123 @@ div.desc h3 {
     
   }
 
-  .ultima-seccion {
+  main .ultima-seccion {
     background-color:var(--color-primary);
     width: 100%;
-    height: 345px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.text-aside{
-     position: relative;
-     top:50px;
-}
-.text-aside h2 {
+    height: 522px;
     display: flex;
-    width: 200px;
-    height: 40px;
-    color: var(--color-tertiary);
-    font-family: var(--tipography-titles);
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 68px;
-    text-align: center;  
-    position: relative;
-    left: 180px;
-}
-.text-aside p {   
-    display: flex;
-    width: 200px;
-    height: 40px;
-    color: var(--color-tertiary);
-    font-weight: 400;
-    line-height: 30px;
-    padding: 5px;
-    text-align: justify;
-    align-items: center;
-    margin: 100px 200px 80px 150px;
-}
-.section-2 p {
-    display: flex;
-    font-family: var(--tipography-titles);
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 30px;
-    color: var(--color-tertiary);
-}
-figure img{ 
-    display:inline-flex;
-    width: 205px;  
-    height: 255px;
-    flex-direction:row;
-    margin-left: auto;
-    border-radius: 8px 0px 0px 8px;
-
-}
-aside {    
-    background-color: #171A1F4D;
-    display: flex;
-    width: 650px;
-    height: 255px;
-    border-radius: 8px;
-    position: relative;   
-    right:90px;
-    top: 38px;
     
-    
-}
-span {
-    display: flex;
-    height: 50px;
-    flex-direction: column;
-    color: var(--color-tertiary);
-    line-height: 10px;
-    font-weight: 600;
-    font-size: 10px;
-    text-align:justify;
-    position: relative;
-    left: 10px;
-}
-
-.text_foto button{
-  position:relative;
-  left:320px;
-  bottom:60px;
-  gap:1.25rem;
-}
-
-.text_foto button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;    
-  border: none;  
+  }
   
-}
-
-.text_foto button:hover svg path {
-  stroke: var(--color-botones);
-  fill: var(--color-botones);
-   
-}
+  main .ultima-seccion .text-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    padding-left:100px;
+    width: 100%;
+      
+  }
+  
+  main .ultima-seccion .text-aside .text-asideH2 { 
+      color: var(--color-tertiary);
+      font-family: var(--tipography-titles);
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 68px;
+      margin-bottom: 15px;
+      
+  }
+  main .ultima-seccion .text-aside p {   
+      
+      color: var(--color-tertiary);
+      font-family: var(--tipography-text);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+  }
+  
+  main .ultima-seccion .section-2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  
+  main .ultima-seccion .section-2 .contenedor{
+    display: flex;
+    width: 80%;
+  }
+  
+  main .ultima-seccion .section-2 .img_footer .foto img{ 
+    width: 100%;  
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+  
+  }
+  
+  main .ultima-seccion .section-2 .text_foto{
+    display: flex;
+    flex-direction: column;
+    background-color: #171A1F4D;
+    padding: 20px;
+    position: relative;
+  }
+  
+  
+  main .ultima-seccion .section-2 .text_foto p {
+      display: flex;
+      font-family: var(--tipography-titles);
+      font-size: 20px;
+      font-weight: 200;
+      line-height: 26px;
+      color: var(--color-tertiary);
+      margin-bottom: 15px;
+      padding-top:23px;
+  }
+  
+  aside {    
+      display: flex;
+      
+      
+      
+  }
+  span {
+      color: var(--color-tertiary);
+      line-height: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      font-family: var(--tipography-text);
+  
+  }
+  
+  main .ultima-seccion .section-2 .contenedor .text_foto .botones-flecha{
+    display: flex;
+    gap: 14px;
+    position: absolute;
+    bottom: -25px;
+    right: 45px;
+  }
+  
+  
+  main .ultima-seccion .section-2 .text_foto .botones-flecha button {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    border: 1px solid #EFFDFA;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;    
+    
+    
+  }
+  
+  main .ultima-seccion .seccion-2 .text_foto .botones-flecha button:hover svg path {
+    stroke: var(--color-botones);
+    fill: var(--color-botones);
+    
+  }
 
 
 footer{ 
@@ -569,13 +588,6 @@ input{
     left:40px; 
 }
 
-@media (max-width: 850px){
-  .uno {
-    flex-direction: column;
-  }
-  
-}
-
 
 @media (min-width: 1025px) {
   #img2,
@@ -585,14 +597,18 @@ input{
   
 }
 
+
 @media (max-width: 850px){
+  
+
+
   .Galeria {
     flex-wrap: wrap;
     justify-content: center;
 
   }
 
-  .header__menu {
+  header .nav .Enlaces .header__menu {
     display: block;
   }
 
@@ -600,7 +616,14 @@ input{
     display: none;
   }
 
+  .uno {
+    flex-direction: column;
+  }
 
+  .vid video { 
+    width: 588px;
+    height:182px;
+}
 
 
 
@@ -608,12 +631,6 @@ input{
   
 }
 
-@media (max-width: 850px) {
-  .vid video { 
-    width: 588px;
-    height:182px;
-}
-}
 
 @media screen and ( max-width:800px) {
   footer{
@@ -630,9 +647,6 @@ input{
     gap: 30px;
     padding: 30px 0px;
  }
-
-
-
 
 }
 
