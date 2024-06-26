@@ -104,10 +104,10 @@ input.src {
   outline: none;
   width: 148.6px;
   height: 38px;
-  border-radius: 19px;
   padding: 12px 16px;
   background-color: transparent;
   cursor: pointer;
+  border-right: 1px solid #9AEFE2;
 }
 
 .btn:hover {
@@ -117,6 +117,7 @@ input.src {
 .btn.active {
   background-color: var(--color-primary);
   color: var(--color-tertiary);
+  border-radius: 19px;
 }
 
 select {

@@ -3,35 +3,26 @@
 const listaProductos = [
     {
         id: 1,
-        nombre: 'collar de perlas',
+        nombre: 'collar de gemas de lujo',
         codigo: '',
-        precioUnitario: 70000,
-        tipoAccesorio: 'collar',
+        precioUnitario: 168076,
+        tipoAccesorio: 'collares',
         imagenes: '',
         descripcion: '',
-        cantidad: 0, 
-        stock: {
-            colores: {
-                dorado: 10,
-                plateado: 5
-            },
-            tallas: {
-                pequeña: 3,
-                mediana: 4,
-                grande: 8
-            }
-        }
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
     },
 
     {
         id: 2,
-        nombre: 'anillo de jade',
+        nombre: 'anillo aurora',
         codigo: '',
-        precioUnitario: 85000,
-        tipoAccesorio: 'anillo',
-        imagenes: ["anillo_plata_frontal.jpg", "anillo_plata_lateral.jpg"],
+        precioUnitario: 125028,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
         descripcion: '',
-        cantidad: 3,
         stockPorVariante: [
             { color: "plata", talla: "S", cantidad: 10 },
             { color: "plata", talla: "M", cantidad: 15 }
@@ -40,18 +31,213 @@ const listaProductos = [
 
     {
         id: 3,
-        nombre: 'anillo de plata',
+        nombre: 'collar reflejos',
         codigo: '',
-        precioUnitario: 92000,
-        tipoAccesorio: 'anillo',
-        imagenes: ["anillo_plata_frontal.jpg", "anillo_plata_lateral.jpg"],
+        precioUnitario: 620073,
+        tipoAccesorio: 'collares',
+        imagenes: '',
         descripcion: '',
-        cantidad: 5,
         stockPorVariante: [
             { color: "plata", talla: "S", cantidad: 10 },
             { color: "plata", talla: "M", cantidad: 15 }
         ]
-    }
+    },
+
+    {
+        id: 4,
+        nombre: 'Anillo infinito de ensueño',
+        codigo: '',
+        precioUnitario: 327071,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 5,
+        nombre: 'Anillo de joyas opulentas',
+        codigo: '',
+        precioUnitario: 168076,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 6,
+        nombre: 'Aretes Solitario Sereno',
+        codigo: '',
+        precioUnitario: 125028,
+        tipoAccesorio: 'aretes',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 7,
+        nombre: 'aretes de halo atemporales',
+        codigo: '',
+        precioUnitario: 620073,
+        tipoAccesorio: 'aretes',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 8,
+        nombre: 'aretes exquisitos',
+        codigo: '',
+        precioUnitario: 327071,
+        tipoAccesorio: 'aretes',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 9,
+        nombre: 'anillo de elegancia atemporal',
+        codigo: '',
+        precioUnitario: 168076,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+     {
+        id: 6,
+        nombre: 'Aretes Solitario Sereno',
+        codigo: '',
+        precioUnitario: 125028,
+        tipoAccesorio: 'aretes',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 7,
+        nombre: 'aretes de halo atemporales',
+        codigo: '',
+        precioUnitario: 620073,
+        tipoAccesorio: 'aretes',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 8,
+        nombre: 'aretes exquisitos',
+        codigo: '',
+        precioUnitario: 327071,
+        tipoAccesorio: 'aretes',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 9,
+        nombre: 'anillo de elegancia atemporal',
+        codigo: '',
+        precioUnitario: 168076,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 10,
+        nombre: 'Anillo de encantos de lujo',
+        codigo: '',
+        precioUnitario: 620073,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 11,
+        nombre: 'anillo de floración dichosa',
+        codigo: '',
+        precioUnitario: 620073,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 12,
+        nombre: 'anillo chispeante',
+        codigo: '',
+        precioUnitario: 620073,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
+
+    {
+        id: 13,
+        nombre: 'anillo reluciente',
+        codigo: '',
+        precioUnitario: 620073,
+        tipoAccesorio: 'anillos',
+        imagenes: '',
+        descripcion: '',
+        stockPorVariante: [
+            { color: "plata", talla: "S", cantidad: 10 },
+            { color: "plata", talla: "M", cantidad: 15 }
+        ]
+    },
 ];
 
 // Función para filtrar productos por tipo de accesorio
@@ -60,7 +246,7 @@ function filtrarPorTipo(productos, tipoAccesorio) {
 }
 
 // Llamada a la función para filtrar por un tipo de accesorio 
-let tipoAccesorioAFiltrar = "anillo";
+let tipoAccesorioAFiltrar = "anillos";
 let productosFiltrados = filtrarPorTipo(listaProductos, tipoAccesorioAFiltrar);
 
 // Mostrar el resultado

@@ -323,16 +323,17 @@ div.desc h3 {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 4% 7%;
   }
 
   .nuestra-historia {
-    padding: 30px;
+    padding: 1%;
     
   }
 
   .vid video {
-    width: 1176px;
-    height:368px;
+    width: 100%;
+    aspect-ratio: 1176/368;
     border-radius: 8px;
     object-fit: cover;
     
@@ -621,15 +622,7 @@ input{
     flex-direction: column;
   }
 
-  .vid video { 
-    width: 588px;
-    height:182px;
-}
 
-
-
-
-  
 }
 
 
@@ -651,10 +644,5 @@ input{
 
 }
 
-@media (max-width: 600px) {
-  .vid video { 
-    width: 441px;
-    height: 136.5px;
-}
-}
+
 
