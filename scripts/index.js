@@ -9,6 +9,7 @@ const listaProductos = [
         tipoAccesorio: 'collar',
         imagenes: '',
         descripcion: '',
+        cantidad: 0, 
         stock: {
             colores: {
                 dorado: 10,
@@ -30,6 +31,7 @@ const listaProductos = [
         tipoAccesorio: 'anillo',
         imagenes: ["anillo_plata_frontal.jpg", "anillo_plata_lateral.jpg"],
         descripcion: '',
+        cantidad: 3,
         stockPorVariante: [
             { color: "plata", talla: "S", cantidad: 10 },
             { color: "plata", talla: "M", cantidad: 15 }
@@ -44,6 +46,7 @@ const listaProductos = [
         tipoAccesorio: 'anillo',
         imagenes: ["anillo_plata_frontal.jpg", "anillo_plata_lateral.jpg"],
         descripcion: '',
+        cantidad: 5,
         stockPorVariante: [
             { color: "plata", talla: "S", cantidad: 10 },
             { color: "plata", talla: "M", cantidad: 15 }
@@ -56,11 +59,11 @@ function filtrarPorTipo(productos, tipoAccesorio) {
     return productos.filter(producto => producto.tipoAccesorio === tipoAccesorio);
 }
 
-// Llamada a la función para filtrar por un tipo de accesorio específico
+// Llamada a la función para filtrar por un tipo de accesorio 
 let tipoAccesorioAFiltrar = "anillo";
 let productosFiltrados = filtrarPorTipo(listaProductos, tipoAccesorioAFiltrar);
 
-// Mostrar el resultado en la consola del navegador
+// Mostrar el resultado
 console.log("Productos filtrados por tipo de accesorio:", productosFiltrados);
 
 //Buscar por nombre 
@@ -79,6 +82,7 @@ let terminoBusqueda = "collar de perlas";
 let productosEncontrados = buscarPorNombre(listaProductos, terminoBusqueda);
 
 console.log(`Productos encontrados con el término "${terminoBusqueda}":`, productosEncontrados);
+
 
 // Ordenar los precios 
 
@@ -104,3 +108,14 @@ console.log("Productos ordenados por precio de manera ascendente:", productosOrd
 // Llamada a la función para ordenar por precio de manera descendente
 let productosOrdenadosDescendente = ordenarPorPrecio(listaProductos, 'descendente');
 console.log("Productos ordenados por precio de manera descendente:", productosOrdenadosDescendente);
+
+//Funcion del total a pagar
+const totalApagar = listaProductos.reduce(
+    (producto, propiedad) =>
+      producto + propiedad.cantidad * propiedad.precioUnitario,
+    0
+  );
+
+  console.log(
+    "El total a pagar es: $" +
+      totalApagar);
