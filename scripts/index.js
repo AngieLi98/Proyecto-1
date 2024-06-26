@@ -5,7 +5,7 @@ const listaProductos = [
         id: 1,
         nombre: 'collar de perlas',
         codigo: '',
-        precioUnitario: 0,
+        precioUnitario: 70000,
         tipoAccesorio: 'collar',
         imagenes: '',
         descripcion: '',
@@ -26,7 +26,7 @@ const listaProductos = [
         id: 2,
         nombre: 'anillo de jade',
         codigo: '',
-        precioUnitario: 0,
+        precioUnitario: 85000,
         tipoAccesorio: 'anillo',
         imagenes: ["anillo_plata_frontal.jpg", "anillo_plata_lateral.jpg"],
         descripcion: '',
@@ -40,7 +40,7 @@ const listaProductos = [
         id: 3,
         nombre: 'anillo de plata',
         codigo: '',
-        precioUnitario: 0,
+        precioUnitario: 92000,
         tipoAccesorio: 'anillo',
         imagenes: ["anillo_plata_frontal.jpg", "anillo_plata_lateral.jpg"],
         descripcion: '',
@@ -66,7 +66,7 @@ console.log("Productos filtrados por tipo de accesorio:", productosFiltrados);
 //Buscar por nombre 
 
 function buscarPorNombre(listaProductos, terminoBusqueda) {
-    // Convertimos el término de búsqueda a minúsculas para hacer la búsqueda case insensitive
+    
     terminoBusqueda = terminoBusqueda.toLowerCase();
 
     return listaProductos.filter(listaProductos =>
@@ -79,3 +79,28 @@ let terminoBusqueda = "collar de perlas";
 let productosEncontrados = buscarPorNombre(listaProductos, terminoBusqueda);
 
 console.log(`Productos encontrados con el término "${terminoBusqueda}":`, productosEncontrados);
+
+// Ordenar los precios 
+
+function ordenarPorPrecio(producto, orden) {
+    let productosCopia = [...producto];
+
+    return productosCopia.sort((a, b) => {
+        if (orden === 'ascendente') {
+            return a.precioUnitario - b.precioUnitario;
+        } else if (orden === 'descendente') {
+            return b.precioUnitario - a.precioUnitario;
+        } else {
+            throw new Error("El parámetro 'orden' debe ser 'ascendente' o 'descendente'");
+        }
+      });
+}
+
+
+
+let productosOrdenadosAscendente = ordenarPorPrecio(listaProductos, 'ascendente');
+console.log("Productos ordenados por precio de manera ascendente:", productosOrdenadosAscendente);
+
+// Llamada a la función para ordenar por precio de manera descendente
+let productosOrdenadosDescendente = ordenarPorPrecio(listaProductos, 'descendente');
+console.log("Productos ordenados por precio de manera descendente:", productosOrdenadosDescendente);
