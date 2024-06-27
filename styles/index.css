@@ -317,7 +317,6 @@ div.desc h3 {
   .video {
     background-color: #FAFAFB;
     text-align: center;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
