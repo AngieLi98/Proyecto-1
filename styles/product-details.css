@@ -22,6 +22,18 @@
   list-style: none;
 }
 
+header {
+  background-color: var(--color-primary);
+}
+
+header .nav .header__menu {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+  
+}
+
 .nav {
   background-color: var(--color-primary);
   display: flex;
@@ -646,6 +658,16 @@ input{
   }
 
   @media (max-width: 850px){
+
+    header .nav .header__menu {
+      display: block;
+      margin-top: 5px;
+    }
+  
+    .Enlaces {
+      display: none;
+    }
+
     .uno {
       flex-direction: column;
    } 
