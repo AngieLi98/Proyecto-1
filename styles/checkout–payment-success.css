@@ -27,12 +27,21 @@ header {
   z-index: 9999;
 }
 
+header .nav .header__menu {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+  
+}
+
 .nav {
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 132px;
+  
 }
 
 header .nav .header__logo {
@@ -40,17 +49,17 @@ header .nav .header__logo {
   font-size: 30px;
   line-height: 46px;
   font-weight: 400;
-  color: var(--color-secondary);
+  color: var(--color-secondary); 
   font-family: var(--tipography-titles);
 }
 
-.nav .Enlaces a {
+.nav .Enlaces a{
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   font-family: var(--tipography-text);
-  white-space: nowrap;
+  white-space: nowrap;   
 }
 
 .nav a:hover {
@@ -400,4 +409,17 @@ input {
   position: relative;
   top: 45px;
   left: 40px;
+}
+
+@media (max-width: 850px) {
+
+  header .nav .header__menu {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .Enlaces {
+    display: none;
+  }
+
 }

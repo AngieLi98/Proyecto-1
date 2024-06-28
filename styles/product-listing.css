@@ -24,6 +24,14 @@ header {
   height: 450px;
 }
 
+header .nav .header__menu {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+  
+}
+
 .nav {
   background-color: var(--color-primary);
   display: flex;
@@ -139,7 +147,6 @@ select {
   padding-right: 3.8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17.4rem, 1fr));
-  /* grid-template-columns: repeat(4, 1fr); */
   gap: 1.5rem;
 }
 
@@ -398,16 +405,26 @@ input{
 }
 
 @media (max-width: 850px){
+
+  
+  header .nav .header__menu {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .Enlaces {
+    display: none;
+  }
+
+
   .uno {
     flex-direction: column;
   }
-  
-}
 
-@media (max-width: 850px){
   input.src {
-    width: 350px;
+    width: 300px;
     
   }
   
 }
+
