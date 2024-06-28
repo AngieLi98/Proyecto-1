@@ -602,13 +602,14 @@ footer .red {
 
 }
 
-footer .derechos {
+footer .derechos p{
   width: 40%;
   height: 20px;
   color: #FFFFFF;
   font-size: 10px;
   margin-left: 40px;
-  
+  position: relative;
+  top: 30px;
 }
 
 
@@ -640,11 +641,7 @@ footer .derechos {
 
   .Enlaces {
     display: none;
-  }
-
-
-
-  
+  }  
   .uno {
     flex-direction: column;
   }
@@ -654,30 +651,113 @@ footer .derechos {
     justify-content: center;
 
   }
+}
 
+
+@media (max-width: 768px) {
+  footer {
+      width: 100%;
+      height: 234px;
+      flex-direction: column;
+      align-items: center;
+  }
+  .lista ul{
+    flex: 1 1 100%;
+    align-content: center;
+  }
+  .div_3 p{
+      text-align: center;
+  }
+
+  .div_3{
+      align-items: center;
+  }
   
-
-
+  .red_social {
+      flex-direction: column;
+      justify-content: center;
+  }
+  .derechos{
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
+@media (max-width: 375px) {
+  
+  .lista ul{
+      flex-wrap: wrap;
+  }
 
-@media screen and ( max-width:800px) {
-  footer{
-    grid-template-columns: repeat(1,1fr);   
-    width: 100%;
-    gap: 20px;
-    padding: 20px 0px;
- }
+  .lista2 input, .lista2 button {
+      width: 100%;
+      max-width: 100px;
+  } 
+  .red_social{
+    margin-left: 5px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .derechos{
+    width: 40px;
+    display: flex;
+    text-align: center;
+  }
 }
-@media (min-width: 1025px) {
-  footer{
-    grid-template-columns: repeat(4,1fr);   
-    width: 100%;
-    gap: 30px;
-    padding: 30px 0px;
- }
-
+@media (max-width: 1024px) {
+  footer .grupo1 {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  footer .red_social {
+      justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  footer .grupo1 {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  footer .red_social {
+      justify-content: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  footer .lista2 {
+      margin: 5px 0;
+  }
+  footer input {
+      flex-direction: column;
+  }
+  footer input, 
+  footer  button {
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+  footer button {
+      width: 100px;
+  }
+  footer .red_social{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  footer .red_social a {
+      margin: 5px 0;
+  }
 }
 
-
-
+@media (max-width: 375px) {
+  footer .footer-container{
+    text-align: center;
+    flex-direction: column;
+  }
+}
+ @media (max-width: 768px) {
+  footer .grupo1 {
+      flex-direction: column;
+      align-items: center;
+  }
+  footer .red_social{
+      justify-content: flex-start;
+  }
+}
