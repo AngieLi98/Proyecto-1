@@ -24,6 +24,14 @@ header {
   height: 450px;
 }
 
+header .nav .header__menu {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+  
+}
+
 .nav {
   background-color: var(--color-primary);
   display: flex;
@@ -397,16 +405,26 @@ input{
 }
 
 @media (max-width: 850px){
+
+  
+  header .nav .header__menu {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .Enlaces {
+    display: none;
+  }
+
+
   .uno {
     flex-direction: column;
   }
-  
-}
 
-@media (max-width: 850px){
   input.src {
     width: 300px;
     
   }
   
 }
+
