@@ -32,7 +32,7 @@ header .nav .header__menu {
   cursor: pointer;
   border: none;
   display: none;
-  
+
 }
 
 .nav {
@@ -41,7 +41,7 @@ header .nav .header__menu {
   justify-content: space-between;
   align-items: center;
   padding: 10px 132px;
-  
+
 }
 
 header .nav .header__logo {
@@ -49,17 +49,17 @@ header .nav .header__logo {
   font-size: 30px;
   line-height: 46px;
   font-weight: 400;
-  color: var(--color-secondary); 
+  color: var(--color-secondary);
   font-family: var(--tipography-titles);
 }
 
-.nav .Enlaces a{
+.nav .Enlaces a {
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   font-family: var(--tipography-text);
-  white-space: nowrap;   
+  white-space: nowrap;
 }
 
 .nav a:hover {
@@ -417,4 +417,146 @@ input {
     display: none;
   }
 
+}
+
+@media (max-width: 375px) {
+  footer {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+  }
+
+  footer .grupo1 .lista {
+    width: 20%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  footer .grupo1, footer .section-footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer h2 {
+    font-size: 24px;
+    text-align: center;    
+  }
+
+  footer .grupo1 .lista2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  footer .grupo1 .div_3 p {
+    width: 250px;
+    text-align: center;
+  }
+
+  footer input,
+  footer button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer .red_social {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  footer .derechos p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Tablets (800px) */
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer .section-footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .grupo1 {
+    flex-wrap: wrap;
+  }
+
+  footer h2 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 0 40%;
+    align-items: center;
+  }
+
+  footer .lista2 {
+    flex-direction: column;
+    width: 70%;
+    align-content: center;  
+  }
+
+  footer input,
+  footer button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer .red_social {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  footer .derechos p {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+} 
+
+@media (min-width: 1440px) {
+  footer {
+    flex-direction: row;
+    height: auto;
+  }
+
+  footer .grupo1,
+  footer .section-footer2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0 0 0 30px;
+  }
+
+  footer .lista,
+  footer .lista2 {
+    margin: 20px 0;
+    margin-left: 200px;
+    width: auto;
+  }
+
+  footer input,
+  footer button {
+    width: auto;
+  }
+
+  footer .red_social {
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  footer .derechos p {
+    width: 80%;
+    text-align: left;
+    margin-left: 40px;
+  }
 }

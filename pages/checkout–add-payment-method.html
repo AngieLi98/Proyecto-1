@@ -148,29 +148,28 @@
         <button type="submit">Proceder al pago</button>
       </div>
     </section>
-    <section class="Galeria" id="fondo"> <!-- galeria en cards-->
-      <div class="text--">
-        <h2>También te puede interesar</h2>
-        <span>Ver más</span>
-      </div>
+    <h2 class="galeriaH2">También te puede interesar</h2>
+    <section class="Galeria">
+      <!-- 1ra galeria en cards-->
       <div class="responsive">
         <div class="gallery">
           <figure>
-            <img src="../assets/img/Image 8.jpg" alt="Piedra brillante">
+            <img src="/Proyecto-1/assets/img/Image 8.jpg" alt="Piedra brillante">
           </figure>
           <div class="desc">
-            <h3>Piedra brillante</h3>
+            <h3>Piedra Brillante</h3>
             <p>$168.76</p>
           </div>
         </div>
       </div>
+
       <div class="responsive">
         <div class="gallery">
           <figure>
-            <img src="../assets/img/img-12.jpeg" alt="Pendientes exquisitos">
+            <img src="/Proyecto-1/assets/img/img-12.jpeg" alt="Pendientes exquisitos">
           </figure>
           <div class="desc">
-            <h3>Pendientes exquisitos</h3>
+            <h3>Pendientes Exquisitos</h3>
             <p>$125.28</p>
           </div>
         </div>
@@ -183,7 +182,7 @@
           </figure>
           <div class="desc">
             <h3>Anillo Brillante</h3>
-            <p>168.76</p>
+            <p>$168.76</p>
           </div>
         </div>
       </div>
@@ -191,10 +190,10 @@
       <div class="responsive">
         <div class="gallery">
           <figure>
-            <img src="../assets/img/img-14.jpeg" alt="Broche de dijes de lujo">
+            <img src="/Proyecto-1/assets/img/img-14.jpeg" alt="Broche de dijes de lujo">
           </figure>
           <div class="desc">
-            <h3>Broche de dijes de lujo</h3>
+            <h3>Broche De Dijes De Lujo</h3>
             <p>$327.71</p>
           </div>
         </div>
@@ -203,68 +202,82 @@
       <div class="responsive">
         <div class="gallery">
           <figure>
-            <img src="../assets/img/Container 7.jpg" alt="Broche de dijes de lujo">
+            <img src="/Proyecto-1/assets/img/imagen19.jpg" alt="Broche de dijes de lujo">
           </figure>
           <div class="desc">
-            <h3>Broche de dijes de lujo</h3>
+            <h3>Broche De Dijes De Lujo</h3>
             <p>$327.71</p>
           </div>
         </div>
       </div>
-      <div class="clearfix"></div>
-      </div>
-    </section> <!-- galeria en cards-->
+    </section>
+    <!-- galeria en cards-->
     <hr>
   </main>
-  <footer class="pies_de_pagina"> <!-- Pie de pagina-->
-    <div class="grupo1">
-      <div>
-        <h1 class="logo_">Darling</h1> <!-- logo-->
+     
+    <footer>
+      <div class="footer-container">   <!-- Pie de pagina-->
+        <section class="grupo1">
+          <div>
+            <h2 class="logo_">Darling</h2>
+            <!-- logo-->
+          </div>
+          <div class="lista">
+            <!-- primera lista de enlaces del footer -->
+            <ul>
+              <li>
+                <a href="##">Acerca de</a>
+                <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
+                <a href="##">Colecciones</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lista">
+            <!-- segunda lista de enlaces del footer -->
+            <ul>
+              <li>
+                <a href="##">Tèrminos</a>
+                <a href="/Proyecto-1/pages/checkout–payment-success.html"
+                  >Privacidad</a
+                >
+                <a href="##">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lista2">
+            <!-- suscribete footer-->
+            <div class="div_3">
+              <p>Suscríbete a nuestro boletín</p>
+              <p>Para anuncios de productos e información exclusiva</p>
+            </div>
+            <div class="form_footer">
+              <form action="">
+                <button class="boton_pie" type="submit">Suscribirse</button>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Introduce tu correo electrónico"
+                  id=""
+                />
+              </form>
+            </div>           
+          </div>
+        </section>
+        <!-- derechos de autor -->
+        <section class="section-footer2">
+          <div class="derechos">
+            <p> © 2022 Brand, Inc. </p>
+          </div>
+           <!-- Redes Sociales-->
+          <div class="red_social">
+              <span class="red"><i class="fa-brands fa-twitter"></i></span>
+              <span class="red"><i class="fa-brands fa-facebook"></i></span>
+              <span class="red"><i class="fa-brands fa-linkedin"></i></span>
+              <span class="red"><i class="fa-brands fa-youtube"></i></span>           
+          </div>
+        </section>      
       </div>
-      <div class="lista_1"> <!-- primera lista de enlaces del footer -->
-        <ul>
-          <li>
-            <a href="##">Acerca de</a>
-            <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
-            <a href="##">Colecciones</a>
-          </li>
-        </ul>
-      </div>
-      <div class="lista2"> <!-- segunda lista de enlaces del footer -->
-        <ul>
-          <li>
-            <a href="##">Tèrminos</a>
-            <a href="/Proyecto-1/pages/checkout–payment-success.html">Privacidad</a>
-            <a href="##">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="box"> <!-- suscribete footer-->
-        <div class="div_3">
-          <p>Suscríbete a nuestro boletín</p>
-          <p>Para anuncios de productos e información exclusiva</p>
-        </div>
-        <div class="form_footer">
-          <form action="">
-            <button class="boton_pie" type="submit">Suscribirse</button>
-            <input type="email" name="email" placeholder="Introduce tu correo electrónico" id="">
-          </form>
-        </div>
-        <!-- Redes Sociales-->
-        <div class="red_social">
-          <span class="red"><i class="fa-brands fa-twitter"></i></span>
-          <span class="red"><i class="fa-brands fa-facebook"></i></span>
-          <span class="red"><i class="fa-brands fa-linkedin"></i></span>
-          <span class="red"><i class="fa-brands fa-youtube"></i></span>
-        </div>
-      </div>
-    </div>
-    <!-- derechos de autor -->
-    <div class="derechos">
-      <small> © 2022 Brand, Inc. </small>
-    </div>
-
-  </footer>
+    </footer>
 </body>
 
 </html>

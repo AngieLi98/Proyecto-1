@@ -29,7 +29,7 @@ header .nav .header__menu {
   cursor: pointer;
   border: none;
   display: none;
-  
+
 }
 
 .nav {
@@ -297,21 +297,21 @@ div.desc h3 {
 
 }
 
-  .button1 {
-    background-color: var(--color-tertiary); 
-    color:var(--color-primary); 
-    border: 2px solid var(--color-primary);
-  }
-  
-  .button1:hover {
-    background-color: var(--color-primary);
-    color: var(--color-tertiary);
-  }
+.button1 {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
 
-  #fondo {
-    background-color: #FAFAFB;
-    
-  }
+.button1:hover {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+#fondo {
+  background-color: #FAFAFB;
+
+}
 
 .video {
   background-color: #FAFAFB;
@@ -323,25 +323,27 @@ div.desc h3 {
   justify-content: center;
   width: 100%;
 }
-  .video {
-    background-color: #FAFAFB;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 4% 7%;
-  }
+
+.video {
+  background-color: #FAFAFB;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4% 7%;
+}
 
 .nuestra-historia {
   padding: 30px;
 
 }
-  .nuestra-historia {
-    padding: 1%;
-    
-  }
+
+.nuestra-historia {
+  padding: 1%;
+
+}
 
 .vid video {
   width: 1176px;
@@ -350,13 +352,14 @@ div.desc h3 {
   object-fit: cover;
 
 }
-  .vid video {
-    width: 100%;
-    aspect-ratio: 1176/368;
-    border-radius: 8px;
-    object-fit: cover;
-    
-  }
+
+.vid video {
+  width: 100%;
+  aspect-ratio: 1176/368;
+  border-radius: 8px;
+  object-fit: cover;
+
+}
 
 main .ultima-seccion {
   background-color: var(--color-primary);
@@ -478,14 +481,11 @@ main .ultima-seccion .seccion-2 .text_foto .botones-flecha button:hover svg path
 
 }
 
-footer{
+footer {
   background-color: var(--color-primary);
   font-family: var(--tipography-text);
   width: 100%;
   height: 234px;
- 
-}
-footer .footer-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -494,16 +494,16 @@ footer .footer-container{
 footer .grupo1 {
   color: var(--color-tertiary);
   text-decoration: none;
-  flex: 1 1 200px;
   margin: 10px;
   display: flex;
+
 }
 
 footer h2 {
- margin: 0 0 0 30px;
+  margin: 0 0 0 30px;
 }
 
-footer h2{
+footer h2 {
   font-family: var(--tipography-titles);
   font-size: 30px;
   font-weight: 400;
@@ -512,7 +512,7 @@ footer h2{
   color: #F5D38E;
 }
 
-footer .lista ul{
+footer .lista {
   width: 70px;
   height: 90px;
   margin-top: 70px;
@@ -520,10 +520,10 @@ footer .lista ul{
   list-style: none;
   padding: 0;
   display: flex;
- 
+
 }
 
-.lista ul li a{
+.lista ul li a {
   color: var(--color-tertiary);
   text-decoration: none;
   align-items: center;
@@ -536,13 +536,15 @@ footer .lista ul{
 .lista ul li {
   font-size: 12px;
   line-height: 20px;
- margin-bottom: 18px;
- flex-wrap: wrap;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
 }
-footer .lista2{
+
+footer .lista2 {
   margin-top: 70px;
-  margin-left: 160px;
+  margin-left: 100px;
 }
+
 footer .div_3 p {
   flex-direction: column;
   font-size: 12px;
@@ -550,14 +552,13 @@ footer .div_3 p {
   color: var(--color-tertiary);
   font-weight: 400;
   width: 300px;
-  margin-left: 20px;
-  margin-top: 0px;
+
 }
 
 form {
   display: flex;
   flex-direction: row-reverse;
-  
+
 }
 
 footer input {
@@ -565,7 +566,7 @@ footer input {
   border: solid 1px var(--color-tertiary);
   width: 265px;
   height: 30px;
-  padding: 7px 132px 6px 12px;
+  padding: 7px 12px 6px 12px;
   border-radius: 18px 0px 0px 18px;
   border: 1px 0px 0px 0px;
   color: var(--color-tertiary);
@@ -573,19 +574,19 @@ footer input {
 
 }
 
-footer button{
+footer button {
   width: 110px;
   background-color: var(--color-secondary);
   border-radius: 0px 50px 50px 0px;
   border: none;
-  cursor: pointer;  
+  cursor: pointer;
 }
-footer .section-footer2{
-  width: 400px;
-  height: 40px;
-}
-footer .red_social {
+
+footer .section-footer2 {
   display: flex;
+}
+
+footer .red_social {
   text-decoration: none;
   color: #FFFFFF;
   width: 55px;
@@ -593,23 +594,22 @@ footer .red_social {
   line-height: 5px;
   justify-content: flex-end;
   display: flex;
-  margin-left: 980px;  
+  margin-left: 950px;
+
 }
 
 footer .red {
- margin-left: 20px;
- font-size: 25px;
+  margin-left: 20px;
+  font-size: 25px;
 
 }
 
-footer .derechos p{
-  width: 40%;
-  height: 20px;
+footer .derechos p {
+  width: 80%;
   color: #FFFFFF;
   font-size: 10px;
   margin-left: 40px;
-  position: relative;
-  top: 30px;
+  align-content: flex-end;
 }
 
 
@@ -624,16 +624,16 @@ footer .derechos p{
 }
 
 
-@media (max-width: 850px){
-  header{
+@media (max-width: 850px) {
+  header {
     height: auto;
   }
 
-  header .primeraSeccion{
+  header .primeraSeccion {
     flex-direction: column;
-    gap:0;
+    gap: 0;
   }
-  
+
   header .nav .header__menu {
     display: block;
     margin-top: 5px;
@@ -646,95 +646,170 @@ footer .derechos p{
   .uno {
     flex-direction: column;
   }
-  
+
   .Galeria {
     flex-wrap: wrap;
     justify-content: center;
 
   }
 
-  main .ultima-seccion{
-    flex-wrap:wrap;
+  main .ultima-seccion {
+    flex-wrap: wrap;
   }
 
-  main .ultima-seccion .text-aside{
+  main .ultima-seccion .text-aside {
     padding-left: 0px;
     align-items: center;
   }
 
-  main .ultima-seccion .section-2 .contenedor .text_foto .botones-flecha{
+  main .ultima-seccion .section-2 .contenedor .text_foto .botones-flecha {
     bottom: -9px;
   }
 
 
 }
 
-
-@media (max-width: 768px) {
-  footer {
-      width: 100%;
-      height: 234px;
-      flex-direction: column;
-      align-items: center;
-  }
-  .lista ul{
-    flex: 1 1 100%;
-    align-content: center;
-  }
-  .div_3 p{
-      text-align: center;
-  }
-
-  .div_3{
-      align-items: center;
-  }
-  
-  .red_social {
-      flex-direction: column;
-      justify-content: center;
-  }
-  .derechos{
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 375px) {
-  
-  .lista ul{
-      flex-wrap: wrap;
+  footer {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
   }
 
-  .lista2 input, .lista2 button {
-      width: 100%;
-      max-width: 100px;
-  } 
-  .red_social{
-    margin-left: 5px;
-    justify-content: center;
-    flex-direction: column;
+  footer .grupo1 .lista {
+    width: 20%;
+    text-align: center;
+    margin: 20px 0;
   }
-  .derechos{
-    width: 40px;
-    display: flex;
+
+  footer .grupo1,
+  footer .section-footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  footer .grupo1 .lista2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  footer .grupo1 .div_3 p {
+    width: 250px;
+    text-align: center;
+  }
+
+  footer input,
+  footer button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer .red_social {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  footer .derechos p {
+    width: 100%;
     text-align: center;
   }
 }
-@media (min-width: 1025px) {
-  footer{
-    grid-template-columns: repeat(4,1fr);   
+
+
+/* Tablets (800px) */
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer .section-footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .grupo1 {
+    flex-wrap: wrap;
+  }
+
+  footer h2 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 0 40%;
+    align-items: center;
+  }
+
+  footer .lista2 {
+    flex-direction: column;
+    width: 70%;
+    align-content: center;
+  }
+
+  footer input,
+  footer button {
     width: 100%;
-    gap: 30px;
-    padding: 30px 0px;
- }
+    margin: 10px 0;
+  }
 
+  footer .red_social {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  footer .derechos p {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
-@media (max-width: 375px){
-  
 
+@media (min-width: 1025px) {
+  footer {
+    flex-direction: row;
+    height: auto;
+  }
 
+  footer .grupo1,
+  footer .section-footer2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0 0 0 30px;
+  }
+
+  footer .lista,
+  footer .lista2 {
+    margin: 20px 0;
+    margin-left: 200px;
+    width: auto;
+  }
+
+  footer input,
+  footer button {
+    width: auto;
+  }
+
+  footer .red_social {
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  footer .derechos p {
+    width: 80%;
+    text-align: left;
+    margin-left: 40px;
+  }
 }
-
-
 
