@@ -36,8 +36,7 @@ function pintarCards(listaCards, contenedorCards) {
     });
 
     } else
-    contenedorCards.textContent = "Producto no diponible";
-    contenedorCards.style.color = "#093931";
+    contenedorCards.textContent = "Producto no disponible";
   }
 
 

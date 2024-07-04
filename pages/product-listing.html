@@ -16,7 +16,7 @@
         <a class="header__logo" href="">Darling .</a>
       </div>
       <div class="Enlaces">
-        <a href="./index.html">Inicio</a>
+        <a href="../index.html">Inicio</a>
         <a href="./pages/product-listing.html">Tienda</a>
         <a href="#contact">Colecciones</a>
         <a href="#services">Acerca de</a>
@@ -54,10 +54,10 @@
           </li>
         </menu>
         <div class="lista-despegable">
-          <select name="" id="despegable">
-            <option value="">Ordenar por precio</option>
-            <option value="">ascendente</option>
-            <option value="">descendente</option>
+          <select id="ordenamiento" onchange="ordenarCards()">
+            <option value="ordenar por precio">Ordenar por precio</option>
+            <option value="ascendente">ascendente</option>
+            <option value="descendente">descendente</option>
           </select>
         </div>
     </section>   

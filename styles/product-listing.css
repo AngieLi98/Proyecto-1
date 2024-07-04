@@ -153,7 +153,7 @@ select {
   width: 144px;
   height: 36px;
   font-family: var(--tipography-text);
-
+  
 }
 
 #coleccion {
@@ -163,6 +163,9 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17.4rem, 1fr));
   gap: 1.5rem;
+  color: var(--color-primary);
+  font-size: 3rem;
+  
 }
 
 .card {

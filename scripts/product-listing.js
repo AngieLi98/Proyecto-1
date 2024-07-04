@@ -43,3 +43,20 @@ function busquedaCardsPorNombre(listaCards, nombreABuscar) {
   );
 }
 
+// Orden por precio
+
+const botonOrdenar = document.getElementById("ordenamiento");
+botonOrdenar.addEventListener("click", ordenarCards);
+
+function ordenarCards() {
+  const selector = document.getElementById("ordenamiento");
+  const valorSeleccionado = selector.value;
+
+  if (valorSeleccionado === "ascendente") {
+    cards.sort((a, b) => a.precio - b.precio);
+  } else if (valorSeleccionado === "descendente") {
+    cards.sort((a, b) => b.precio - a.precio);
+  }
+
+  pintarCards(cards, contenedorCards);
+}
