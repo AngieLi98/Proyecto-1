@@ -281,3 +281,5 @@ let totalAPagar = calcularTotalAPagar(productosCompra);
 
 console.log("Total a pagar:", totalAPagar);
 
+
+

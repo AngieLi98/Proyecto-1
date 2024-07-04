@@ -40,29 +40,32 @@
     </nav>
     <div class="buscador">
       <h2 class="titulo">Nuestros Productos</h2>
-      <input type="text" name="search" placeholder="Encuentra joyas que te gusten" class="src" autocomplete="off">
+      <form id="busqueda">
+        <input type="text" name="search" placeholder="Encuentra joyas que te gusten" class="src" id="inputBusqueda" autocomplete="off">
+    </form>
     </div>
   </header>
 
   <main>
-    <section> <!-- seccion filtro-->
-      <div class="filtros">
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('todo')"> Todo</button>
-          <button class="btn" onclick="filterSelection('anillos')"> Anillos</button>
-          <button class="btn" onclick="filterSelection('brazaletes')"> Brazaletes</button>
-          <button class="btn" onclick="filterSelection('collares')"> Collares</button>
-          <button class="btn" onclick="filterSelection('aretes')"> Aretes</button>
-        </div>
+    <section class="filtro">
+      <menu id="filtros">
+          <li>
+            <button id="todos" name="todos" class="active">Todos</button>
+          </li>
+        </menu>
         <div class="lista-despegable">
           <select name="" id="despegable">
             <option value="">Ordenar por precio</option>
-            <option value="">Ordenar por</option>
-            <option value="">Ordenar por</option>
+            <option value="">ascendente</option>
+            <option value="">descendente</option>
           </select>
         </div>
+    </section>   
+    <section>
+      <div id="coleccion">
+               
       </div>
-      <div class="coleccion">
+      <!-- <div class="coleccion">
         <article class="card collares">
           <figure>
             <img src="../assets/img/pl-imag-1.jpeg" alt="Collar de gemas de lujo">
@@ -180,7 +183,7 @@
             <p>$620.73</p>
           </div>
         </article>
-      </div>
+      </div> -->
       <div class="pagination">
         <a href="#"><i class="arrow left"></i></a>
         <a href="#">1</a>
@@ -274,6 +277,7 @@
     </div>
 
   </footer>
+  <script type="module" src="../scripts/product-listing.js"></script>
 </body>
 
 </html>
