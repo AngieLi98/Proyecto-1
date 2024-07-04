@@ -32,7 +32,7 @@ header .nav .header__menu {
   cursor: pointer;
   border: none;
   display: none;
-  
+
 }
 
 .nav {
@@ -41,7 +41,7 @@ header .nav .header__menu {
   justify-content: space-between;
   align-items: center;
   padding: 10px 132px;
-  
+
 }
 
 header .nav .header__logo {
@@ -49,17 +49,17 @@ header .nav .header__logo {
   font-size: 30px;
   line-height: 46px;
   font-weight: 400;
-  color: var(--color-secondary); 
+  color: var(--color-secondary);
   font-family: var(--tipography-titles);
 }
 
-.nav .Enlaces a{
+.nav .Enlaces a {
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   font-family: var(--tipography-text);
-  white-space: nowrap;   
+  white-space: nowrap;
 }
 
 .nav a:hover {
@@ -272,24 +272,26 @@ footer {
   font-family: var(--tipography-text);
   width: 100%;
   height: 234px;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
 }
 
-.pies_de_pagina .grupo1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+footer .grupo1 {
   color: var(--color-tertiary);
   text-decoration: none;
+  margin: 10px;
+  display: flex;
+
 }
 
-.logo_ {
-  left: 50px;
-  position: relative;
-  top: 50px;
+footer h2 {
+  margin: 0 0 0 30px;
 }
 
-.logo_ {
-  font-family: Cormorant Garamond;
+footer h2 {
+  font-family: var(--tipography-titles);
   font-size: 30px;
   font-weight: 400;
   line-height: 46px;
@@ -297,118 +299,104 @@ footer {
   color: #F5D38E;
 }
 
-.lista_1 ul li {
-  padding: 5px;
-  font-size: 12px;
-  display: grid;
-  margin-top: 10px;
-  line-height: 20px;
-  margin-left: 180px;
+footer .lista {
+  width: 70px;
+  height: 90px;
+  margin-top: 70px;
+  margin-left: 200px;
+  list-style: none;
+  padding: 0;
+  display: flex;
 
 }
 
-.lista_1 a {
+.lista ul li a {
   color: var(--color-tertiary);
   text-decoration: none;
   align-items: center;
-  position: relative;
-  right: 270px;
-  top: 50px;
   text-align: center;
-}
-
-.lista2 ul li {
-  padding: 5px;
-  font-size: 12px;
-  display: grid;
-  margin-top: 10px;
-  line-height: 20px;
-  margin-left: 180px;
-
-}
-
-.lista2 a {
-  color: var(--color-tertiary);
-  text-decoration: none;
-  position: relative;
-  right: 280px;
-  top: 50px;
-}
-
-.box {
-  display: grid;
+  transition: color 0.3s;
   flex-direction: column;
-  margin-left: 10px;
-  align-items: flex-start;
-  position: relative;
-  right: 150px;
-  top: 70px;
-  font-family: var(--tipography-text);
 
 }
 
-.div_3 p {
-  line-height: 20px;
+.lista ul li {
   font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+footer .lista2 {
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+footer .div_3 p {
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 30px;
   color: var(--color-tertiary);
   font-weight: 400;
+  width: 300px;
+
 }
 
 form {
   display: flex;
   flex-direction: row-reverse;
-  position: relative;
-  top: 10px;
+
 }
 
-input {
+footer input {
   background-color: var(--color-primary);
   border: solid 1px var(--color-tertiary);
-  width: 230px;
+  width: 265px;
   height: 30px;
-  padding: 7px 132px 6px 12px;
+  padding: 7px 12px 6px 12px;
   border-radius: 18px 0px 0px 18px;
   border: 1px 0px 0px 0px;
   color: var(--color-tertiary);
   font-size: 10px;
+
 }
 
-.boton_pie {
+footer button {
   width: 110px;
   background-color: var(--color-secondary);
   border-radius: 0px 50px 50px 0px;
   border: none;
-
+  cursor: pointer;
 }
 
-.red_social {
+footer .section-footer2 {
   display: flex;
+}
+
+footer .red_social {
   text-decoration: none;
   color: #FFFFFF;
   width: 55px;
-  height: 55px;
-  line-height: 65px;
+  height: 10px;
+  line-height: 5px;
+  justify-content: flex-end;
+  display: flex;
+  margin-left: 950px;
+
 }
 
-.red {
-  position: relative;
-  left: 190px;
-  padding: 10px 10px;
-  top: 20px;
+footer .red {
+  margin-left: 20px;
+  font-size: 25px;
+
 }
 
-.red i {
-  font-size: 20px;
-}
-
-.derechos {
-  width: 7%;
-  height: 20px;
+footer .derechos p {
+  width: 80%;
   color: #FFFFFF;
   font-size: 10px;
-  position: relative;
-  top: 45px;
-  left: 40px;
+  margin-left: 40px;
+  align-content: flex-end;
 }
 
 @media (max-width: 850px) {
@@ -422,4 +410,146 @@ input {
     display: none;
   }
 
+}
+
+@media (max-width: 375px) {
+  footer {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+  }
+
+  footer .grupo1 .lista {
+    width: 20%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  footer .grupo1, footer .section-footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer h2 {
+    font-size: 24px;
+    text-align: center;    
+  }
+
+  footer .grupo1 .lista2 {
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  footer .grupo1 .div_3 p {
+    width: 250px;
+    text-align: center;
+  }
+
+  footer input,
+  footer button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer .red_social {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  footer .derechos p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Tablets (800px) */
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer .section-footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .grupo1 {
+    flex-wrap: wrap;
+  }
+
+  footer h2 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 0 40%;
+    align-items: center;
+  }
+
+  footer .lista2 {
+    flex-direction: column;
+    width: 70%;
+    align-content: center;  
+  }
+
+  footer input,
+  footer button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer .red_social {
+    margin: 20px 0;
+    justify-content: center;
+  }
+
+  footer .derechos p {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+} 
+
+@media (min-width: 1440px) {
+  footer {
+    flex-direction: row;
+    height: auto;
+  }
+
+  footer .grupo1,
+  footer .section-footer2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0 0 0 30px;
+  }
+
+  footer .lista,
+  footer .lista2 {
+    margin: 20px 0;
+    margin-left: 200px;
+    width: auto;
+  }
+
+  footer input,
+  footer button {
+    width: auto;
+  }
+
+  footer .red_social {
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  footer .derechos p {
+    width: 80%;
+    text-align: left;
+    margin-left: 40px;
+  }
 }
