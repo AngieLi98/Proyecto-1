@@ -219,7 +219,6 @@ main {
 }
 
 
-
 .order-list__card {
   width: 100%;
   height: 148px;
@@ -279,6 +278,25 @@ main {
   font-size: 16px; 
   border-radius: 16px;
   text-align: left;
+}
+
+.contenedor-button{
+  text-align: center;
+}
+
+.button-continue__shopping{
+  display: block;
+  margin: 0 auto;
+  background-color: #093931;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-continue__shopping:hover{
+  background-color: #0056b3;
 }
 
 footer {
