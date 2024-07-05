@@ -16,7 +16,7 @@
         <a class="header__logo" href="">Darling .</a>
       </div>
       <div class="Enlaces">
-        <a href="./index.html">Inicio</a>
+        <a href="../index.html">Inicio</a>
         <a href="./pages/product-listing.html">Tienda</a>
         <a href="#contact">Colecciones</a>
         <a href="#services">Acerca de</a>
@@ -40,29 +40,32 @@
     </nav>
     <div class="buscador">
       <h2 class="titulo">Nuestros Productos</h2>
-      <input type="text" name="search" placeholder="Encuentra joyas que te gusten" class="src" autocomplete="off">
+      <form id="busqueda">
+        <input type="text" name="search" placeholder="Encuentra joyas que te gusten" class="src" id="inputBusqueda" autocomplete="off">
+    </form>
     </div>
   </header>
 
   <main>
-    <section> <!-- seccion filtro-->
-      <div class="filtros">
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('todo')"> Todo</button>
-          <button class="btn" onclick="filterSelection('anillos')"> Anillos</button>
-          <button class="btn" onclick="filterSelection('brazaletes')"> Brazaletes</button>
-          <button class="btn" onclick="filterSelection('collares')"> Collares</button>
-          <button class="btn" onclick="filterSelection('aretes')"> Aretes</button>
-        </div>
+    <section class="filtro">
+      <menu id="filtros">
+          <li>
+            <button id="todos" name="todos" class="active">Todos</button>
+          </li>
+        </menu>
         <div class="lista-despegable">
-          <select name="" id="despegable">
-            <option value="">Ordenar por precio</option>
-            <option value="">Ordenar por</option>
-            <option value="">Ordenar por</option>
+          <select id="ordenamiento" onchange="ordenarCards()">
+            <option value="ordenar por precio">Ordenar por precio</option>
+            <option value="ascendente">ascendente</option>
+            <option value="descendente">descendente</option>
           </select>
         </div>
+    </section>   
+    <section>
+      <div id="coleccion">
+               
       </div>
-      <div class="coleccion">
+      <!-- <div class="coleccion">
         <article class="card collares">
           <figure>
             <img src="../assets/img/pl-imag-1.jpeg" alt="Collar de gemas de lujo">
@@ -180,7 +183,7 @@
             <p>$620.73</p>
           </div>
         </article>
-      </div>
+      </div> -->
       <div class="pagination">
         <a href="#"><i class="arrow left"></i></a>
         <a href="#">1</a>
@@ -225,69 +228,70 @@
   </main>
 
         
-    <footer>
-      <div class="footer-container">   <!-- Pie de pagina-->
-        <section class="grupo1">
-          <div>
-            <h2 class="logo_">Darling</h2>
-            <!-- logo-->
+  <footer>
+    <div class="footer-container">   <!-- Pie de pagina-->
+      <section class="grupo1">
+        <div>
+          <h2 class="logo_">Darling</h2>
+          <!-- logo-->
+        </div>
+        <div class="lista">
+          <!-- primera lista de enlaces del footer -->
+          <ul>
+            <li>
+              <a href="##">Acerca de</a>
+              <a href="../pages/product-listing.html">Tienda</a>
+              <a href="##">Colecciones</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lista">
+          <!-- segunda lista de enlaces del footer -->
+          <ul>
+            <li>
+              <a href="##">Tèrminos</a>
+              <a href="../pages/checkout–payment-success.html"
+                >Privacidad</a
+              >
+              <a href="##">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lista2">
+          <!-- suscribete footer-->
+          <div class="div_3">
+            <p>Suscríbete a nuestro boletín</p>
+            <p>Para anuncios de productos e información exclusiva</p>
           </div>
-          <div class="lista">
-            <!-- primera lista de enlaces del footer -->
-            <ul>
-              <li>
-                <a href="##">Acerca de</a>
-                <a href="/Proyecto-1/pages/product-listing.html">Tienda</a>
-                <a href="##">Colecciones</a>
-              </li>
-            </ul>
-          </div>
-          <div class="lista">
-            <!-- segunda lista de enlaces del footer -->
-            <ul>
-              <li>
-                <a href="##">Tèrminos</a>
-                <a href="/Proyecto-1/pages/checkout–payment-success.html"
-                  >Privacidad</a
-                >
-                <a href="##">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          <div class="lista2">
-            <!-- suscribete footer-->
-            <div class="div_3">
-              <p>Suscríbete a nuestro boletín</p>
-              <p>Para anuncios de productos e información exclusiva</p>
-            </div>
-            <div class="form_footer">
-              <form action="">
-                <button class="boton_pie" type="submit">Suscribirse</button>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Introduce tu correo electrónico"
-                  id=""
-                />
-              </form>
-            </div>           
-          </div>
-        </section>
-        <!-- derechos de autor -->
-        <section class="section-footer2">
-          <div class="derechos">
-            <p> © 2022 Brand, Inc. </p>
-          </div>
-           <!-- Redes Sociales-->
-          <div class="red_social">
-              <span class="red"><i class="fa-brands fa-twitter"></i></span>
-              <span class="red"><i class="fa-brands fa-facebook"></i></span>
-              <span class="red"><i class="fa-brands fa-linkedin"></i></span>
-              <span class="red"><i class="fa-brands fa-youtube"></i></span>           
-          </div>
-        </section>      
-      </div>
-    </footer>
+          <div class="form_footer">
+            <form action="">
+              <button class="boton_pie" type="submit">Suscribirse</button>
+              <input
+                type="email"
+                name="email"
+                placeholder="Introduce tu correo electrónico"
+                id=""
+              />
+            </form>
+          </div>           
+        </div>
+      </section>
+      <!-- derechos de autor -->
+      <section class="section-footer2">
+        <div class="derechos">
+          <p> © 2022 Brand, Inc. </p>
+        </div>
+         <!-- Redes Sociales-->
+        <div class="red_social">
+            <span class="red"><i class="fa-brands fa-twitter"></i></span>
+            <span class="red"><i class="fa-brands fa-facebook"></i></span>
+            <span class="red"><i class="fa-brands fa-linkedin"></i></span>
+            <span class="red"><i class="fa-brands fa-youtube"></i></span>           
+        </div>
+      </section>      
+    </div>
+  </footer>
+  <script type="module" src="../scripts/product-listing.js"></script>
 </body>
 
 </html>
