@@ -142,8 +142,8 @@ main {
 }
 
 .detalles {
-  width: 660px;
-  height: auto;
+  width: 560px;
+  height: 651px;
 }
 
 .detalles__divisor {
@@ -175,6 +175,8 @@ main {
 
 .detalles__item__left {
   display: flex;
+  align-items:normal;
+  justify-content: right;
 }
 
 .detalles__icon__right {
@@ -213,6 +215,7 @@ main {
   font-size: 32px;
   font-family: var(--tipography-titles);
   text-align: left;
+  padding: 0 15px;
 }
 
 
@@ -224,9 +227,9 @@ main {
 }
 
 .order-list__card::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
   height: 132px;
-  background-color: #9095A0;
+  background-color: rgb(255, 255, 255, 1);
   border-radius: 10px;
 }
 
@@ -243,18 +246,20 @@ main {
   border-radius: 4px;
   overflow: hidden;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .item img {
+  display: flex;
   object-fit: cover;
   float: left;
-  width: 120px;
-  height: 120px;
+  width: 94px;
+  height: 94px;
   top: 9.67px;
   gap: 0px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 6px;
   opacity: 0px;
-
+ 
 }
 
 .item h3 {
@@ -265,6 +270,15 @@ main {
   font-weight: 700;
   color: #323842FF;
   /* neutral-700 */
+}
+
+.badge {
+  background-color: #d8d5d5;
+  color: #808285; 
+  padding: 0px 15px;
+  font-size: 16px; 
+  border-radius: 16px;
+  text-align: left;
 }
 
 footer {
