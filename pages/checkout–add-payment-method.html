@@ -145,7 +145,86 @@
         <span class="valores-total">total <small>$1058.72</small></span>
       </div>
       <div class="boton-finalizar-pago">
-        <button type="submit">Proceder al pago</button>
+        <button id="btnirModal">Proceder al pago</button>
+      </div>
+      <div id="myModalCliente" class="modalCliente">
+        <div class="modal1">
+          <h2>Informacion del Cliente</h2>
+          <span class="close" id="close">X</span>
+          <form >
+            <label for="nombres"> Nombres y Apellidos</label>
+            <input type="text" 
+            name="nombreyapellido" 
+            id="nombreYapellido"
+            value=""
+            placeholder="Ingrese su Nombre Completo"
+            >
+  
+            <label for="cel">Nùmero de Celular</label>
+            <input type="tel"
+             name="ncelular" 
+             id="celular"
+             value=""
+             placeholder="32045875550"
+            >
+  
+            <label for="dire">Direcciòn</label>
+            <input type="text"
+             name="dreccion"
+             id="direccion"
+             value=""
+             placeholder="Ingrese su Direecciòn"
+            >
+          </form>         
+        </div>
+        <div class="modal2">
+          <h2>Informaciòn Personal</h2>
+
+          <p>Completa los datos del formulario para realizar el pago</p>
+          <br>
+          <form action="">
+            <label for="correo">Correo Electronico</label>
+            <input type="email"
+            name="email" 
+            value=""
+            id="correoElectronico" 
+            placeholder="darlingjoyeria@gmail.com"
+            >
+  
+            <label for="nombretar"> Nombre en la Tarjeta</label>
+            <input type="text" 
+            name="nombtar" 
+            id="nombreTarjeta" 
+            value=""
+            placeholder="Darling Joyeria"
+            >
+  
+            <label for="ntarjeta">Nùmero de la Tarjeta </label>
+            <input type="number" 
+            name="numero" 
+            id="numTarjeta" 
+            value=""
+            placeholder="1234 1234 1234 1234"
+            >
+  
+            <label for="fecha"> Fecha de Caducidad</label>
+            <input type="number" 
+            name="fnum" 
+            id="fechaCaducidad" 
+            value=""
+            placeholder="05/23"
+            >
+  
+            <label for="c">CVV</label>
+            <input type="number" 
+            name="nc" 
+            id=" cVv" 
+            placeholder="123"
+            >
+          </form>
+          <button type="submit"> Finalizar Compra</button>
+        </div>
+        
       </div>
     </section>
     <h2 class="galeriaH2">También te puede interesar</h2>
@@ -278,6 +357,7 @@
         </section>      
       </div>
     </footer>
+    <script src="/Proyecto-1/scripts/fomulario.js"></script>
 </body>
 
 </html>
