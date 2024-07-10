@@ -692,6 +692,21 @@ footer .derechos p {
 }
 
 @media (max-width: 375px) {
+
+  header .nav{
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  main .encabezados{
+    padding: 0;
+  }
+
+  main .producto .anilloBrillante{
+    width: 100%;
+    aspect-ratio: 477/636;
+  }
+
   footer {
     width: 100%;
     flex-direction: column;
@@ -831,4 +846,12 @@ footer .derechos p {
     text-align: left;
     margin-left: 40px;
   }
+}
+
+
+@media (max-width: 1000px) {
+  .Enlaces {
+    display: none;
+  }
+
 }
