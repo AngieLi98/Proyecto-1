@@ -2,8 +2,9 @@ import {
   filtrarCardsPorCategoria,
   obtenerCategorias,
   obtenerCards,
-  obtenerCardsPorId,
 } from "../modules/services.js";
+
+let cards = [];
 
 //Filtrado de categorias
 
@@ -25,6 +26,9 @@ const pintarCategorias = (listaCategorias) => {
     
   });
 }
+
+
+//Obtencion de cards
 
 function pintarCards(listaCards, contenedor) {
   const contenedorCards = contenedor? contenedor: document.getElementById("coleccion");
@@ -52,12 +56,12 @@ function pintarCards(listaCards, contenedor) {
     section.innerHTML = `
     <div>
       <h3>${cards.nombre}</h3>
-      <p>${cards.precio}</p>
+      <p>$${cards.precio}</p>
     </div>
     `;
 
     tarjeta.addEventListener("click", () => {
-      //sessionStorage.setItem("idProducto", producto.id);
+      sessionStorage.setItem("idCards", cards.id);
       window.location.href = "/pages/product-details.html";
     });
 
@@ -73,18 +77,48 @@ function pintarCards(listaCards, contenedor) {
 
 }
 
+// Busqueda
+
+function busquedaCardsPorNombre(listaCards, nombreABuscar) {
+  return listaCards.filter((cards) =>
+    cards.nombre.toLowerCase().includes(nombreABuscar.toLowerCase())
+  );
+}
+
 const formularioBusqueda = document.getElementById("busqueda");
 
 formularioBusqueda.addEventListener("submit", (evento) => {
   evento.preventDefault();
   const inputBusqueda = document.getElementById("inputBusqueda");
-  const terminoBusqueda = inputBusqueda.value;
-  if (terminoBusqueda.trim() !== "") {
+  const terminoBusqueda = inputBusqueda.value.trim(); 
+
+  if (terminoBusqueda !== "") {
     const resultadoBusqueda = busquedaCardsPorNombre(cards, terminoBusqueda);
     pintarCards(resultadoBusqueda, contenedorCards);
+  } else {
+  
+    pintarCards(cards, contenedorCards);
   }
 });
 
+
+// Orden por precio
+
+function ordenarCards() {
+  const selector = document.getElementById("ordenamiento");
+  const valorSeleccionado = selector.value;
+
+  if (valorSeleccionado === "ascendente") {
+    cards.sort((a, b) => a.precio - b.precio);
+  } else if (valorSeleccionado === "descendente") {
+    cards.sort((a, b) => b.precio - a.precio);
+  }
+
+  pintarCards(cards, contenedorCards);
+}
+
+const botonOrdenar = document.getElementById("ordenamiento");
+botonOrdenar.addEventListener("change", ordenarCards);
 
 //variables/constantes
 const contenedorFiltros = document.getElementById("filtros");
@@ -93,7 +127,14 @@ const contenedorCards = document.getElementById("coleccion");
 //ejecucion
 document.addEventListener("DOMContentLoaded", async () => {
   const categorias = await obtenerCategorias();
-  const cards = await obtenerCards();
+  cards = await obtenerCards();
   pintarCategorias(categorias, contenedorFiltros);
   pintarCards(cards);
+});
+
+
+const botonTodos = document.getElementById("todos")
+
+botonTodos.addEventListener("click", () => {
+  pintarCards(cards, contenedorCards)
 });
