@@ -138,7 +138,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 560px;
 }
 
 .detalles {
@@ -153,7 +153,7 @@ main {
 }
 
 .detalles__wrap {
-  min-height: 651px;
+  height: 560px;
   max-width: 660px;
   border-radius: 5px;
   display: flex;
@@ -188,6 +188,7 @@ main {
 
 .detalles__icon__left {
   display: flex;
+  flex-grow: 2;
   align-items: center;
   justify-content: right;
   padding: 0 30px;
@@ -228,12 +229,12 @@ main {
 .order-list__card::-webkit-scrollbar {
   width: 8px;
   height: 132px;
-  background-color: rgb(255, 255, 255, 1);
+  background-color:var(--color-tertiary);
   border-radius: 10px;
 }
 
 .order-list__card::-webkit-scrollbar-thumb {
-  background: rgb(53, 243, 100);
+  background: var(--color-paragraph);
   border-radius: 10px;
 }
 
@@ -245,7 +246,7 @@ main {
   border-radius: 4px;
   overflow: hidden;
   align-items: center;
-  justify-content: flex-start;
+  /*justify-content: space-between;*/
 }
 
 .item img {
@@ -278,6 +279,24 @@ main {
   font-size: 16px; 
   border-radius: 16px;
   text-align: left;
+}
+
+.detalles__card__right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 15px;
+  /*margin-left: 3em;*/
+  /*align-self: end;*/
+}
+
+.detalles__card__left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  /*align-items: center;*/
+  /*justify-content: right;*/
+  /*padding: 0 30px;*/
 }
 
 .contenedor-button{
