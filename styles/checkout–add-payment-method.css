@@ -458,6 +458,115 @@ header .nav .header__logo {
   color: var(--color-tertiary);
 }
 
+.modalCliente,
+.modalPersonal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2.25rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--color-tertiary);
+}
+
+.modalCliente h2,
+.modalPersonal h2{
+  font-family: var(--tipography-titles);
+  color: var(--color-texto-medio-de-pago);
+  font-size: 1.875rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  line-height: 3.125rem;
+  
+}
+
+
+.modalCliente form,
+.modalPersonal form{
+  display: flex;
+  border: 2px solid var(--color-bordes);
+  align-content: center;
+  margin: auto;
+  width: 50%;
+  height:150%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+
+}
+.modalCliente input,
+.modalPersonal input{
+  align-content: center;
+  flex-direction: column;
+  width: 17.625rem;
+  height: 2.75rem;
+  border:2px solid var(--color-bordes);
+}
+.modalCliente label{
+   flex-direction: column;
+   font-family: var(--tipography-text);
+   text-align: center;
+   line-height: 3.125rem;
+}
+
+.modal2 button{
+  padding: .625rem;
+  background-color: var(--color-boede-mastercard);
+  color: var(--color-bordes);
+  font-family: var(--tipography-text);
+  border: 2px solid var(--color-matercard);
+  border-radius: 2.5rem;
+  align-content: center;
+  width: 18.75rem;
+  cursor: pointer;
+  gap: 1.25rem;
+  position: relative;
+  left: 24.25rem;
+  top: 1.25rem;
+}
+.modal2 p{
+  font-family: var(--tipography-text);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--color-metodo);
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.modal1, .modal2 {
+  background-color: var(--color-tertiary);
+  margin: 1% auto; 
+  padding: 20px;
+  border: 1px solid var(--color-bordes);
+  width: 80%;
+
+}
+
+.close {
+  color:var(--color-del-valor-total);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error{
+  background-color:red;
+}
+form span{
+  color: red;
+}
 .Galeria {
   display: flex;
   flex-direction: row;
