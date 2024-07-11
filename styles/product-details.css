@@ -206,6 +206,10 @@ main .producto .compra .control-cantidad .cantidad {
   margin-right: 7px;
 }
 
+main .producto .compra .control-cantidad #cantidad {
+  padding-left: 15px;
+}
+
 main .producto .compra .botones-carito {
   display: flex;
   gap: 10px;
@@ -692,6 +696,14 @@ footer .derechos p {
 }
 
 @media (max-width: 375px) {
+
+  main .producto .compra{
+    width: 50%;
+  }
+
+  main .producto .compra .botones-carito .botones-compra{
+    font-size: 15px;
+  }
 
   header .nav{
     padding: 0;
