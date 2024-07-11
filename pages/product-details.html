@@ -18,7 +18,7 @@
         </div>
         <div class="Enlaces">
           <a href="./index.html">Inicio</a>
-          <a href="./pages/product-listing.html">Tienda</a>
+          <a href="./product-listing.html">Tienda</a>
           <a href="#contact">Colecciones</a>
           <a href="#services">Acerca de</a>
           <a href="#contact">Contacto</a>
@@ -39,7 +39,6 @@
           </svg>
         </button>
       </nav>
-    
     </header>
     <main>
       <ul class="encabezados">
@@ -100,7 +99,15 @@
           <div class="control-cantidad">
             <p>Cantidad</p>
             <button class="cantidad" id="incremento">-</button>
-            <button class="cantidad" id="cantidad">1</button>
+            <input
+              class="cantidad"
+              type="number"
+              id="cantidad"
+              name="cantidad"
+              value="1"
+              min="1"
+              readonly
+            />
             <button class="cantidad" id="decremento">+</button>
           </div>
 
@@ -108,29 +115,25 @@
             <button class="botones-compra" id="agregar-carrito">
               Agregar al carrito
             </button>
-            <button class="botones-compra" id="comprar">Comprar ahora</button>
+            <a href="./checkout–add-payment-method.html"
+              ><button class="botones-compra" id="comprar">
+                Comprar ahora
+              </button></a
+            >
           </div>
 
           <div class="selector-grid">
             <select class="selector">
               <option value="1">Entrega</option>
-              <option value="2">Opción 2</option>
-              <option value="3">Opción 3</option>
             </select>
             <select class="selector">
               <option value="1">Pago</option>
-              <option value="2">Opción 2</option>
-              <option value="3">Opción 3</option>
             </select>
             <select class="selector">
               <option value="1">garantia</option>
-              <option value="2">Opción 2</option>
-              <option value="3">Opción 3</option>
             </select>
             <select class="selector">
               <option value="1">cuidado</option>
-              <option value="2">Opción 2</option>
-              <option value="3">Opción 3</option>
             </select>
           </div>
         </div>
@@ -272,8 +275,8 @@
             </div>
             <div class="text_foto">
               <p>
-                El anillo en sí es impresionante, con un hermoso diseño que capta
-                la luz y brilla desde todos los ángulos. La calidad de los
+                El anillo en sí es impresionante, con un hermoso diseño que
+                capta la luz y brilla desde todos los ángulos. La calidad de los
                 materiales utilizados es evidente, ya que el anillo parece
                 sustancial y duradero.La piedra preciosa es exquisita, con un
                 color vibrante y una claridad excepcional.
@@ -332,9 +335,9 @@
       </section>
     </main>
 
-               
     <footer>
-      <div class="footer-container">   <!-- Pie de pagina-->
+      <div class="footer-container">
+        <!-- Pie de pagina-->
         <section class="grupo1">
           <div>
             <h2 class="logo_">Darling</h2>
@@ -355,9 +358,7 @@
             <ul>
               <li>
                 <a href="##">Tèrminos</a>
-                <a href="../pages/checkout–payment-success.html"
-                  >Privacidad</a
-                >
+                <a href="../pages/checkout–payment-success.html">Privacidad</a>
                 <a href="##">Contacto</a>
               </li>
             </ul>
@@ -378,23 +379,25 @@
                   id=""
                 />
               </form>
-            </div>           
+            </div>
           </div>
         </section>
         <!-- derechos de autor -->
         <section class="section-footer2">
           <div class="derechos">
-            <p> © 2022 Brand, Inc. </p>
+            <p>© 2022 Brand, Inc.</p>
           </div>
-           <!-- Redes Sociales-->
+          <!-- Redes Sociales-->
           <div class="red_social">
-              <span class="red"><i class="fa-brands fa-twitter"></i></span>
-              <span class="red"><i class="fa-brands fa-facebook"></i></span>
-              <span class="red"><i class="fa-brands fa-linkedin"></i></span>
-              <span class="red"><i class="fa-brands fa-youtube"></i></span>           
+            <span class="red"><i class="fa-brands fa-twitter"></i></span>
+            <span class="red"><i class="fa-brands fa-facebook"></i></span>
+            <span class="red"><i class="fa-brands fa-linkedin"></i></span>
+            <span class="red"><i class="fa-brands fa-youtube"></i></span>
           </div>
-        </section>      
+        </section>
       </div>
     </footer>
+
+    <script type="module" src="../scripts/datalles.js"></script>
   </body>
 </html>
