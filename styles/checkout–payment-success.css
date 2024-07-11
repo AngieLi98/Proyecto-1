@@ -301,6 +301,7 @@ main {
 
 .contenedor-button{
   text-align: center;
+  text-decoration: none;
 }
 
 .button-continue__shopping{
